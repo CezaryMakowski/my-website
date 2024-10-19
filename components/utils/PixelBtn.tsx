@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./PixelBtn.module.css";
 import Image from "next/image";
 import { ComponentPropsWithoutRef } from "react";

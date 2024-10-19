@@ -23,8 +23,12 @@ export default function Circuit({ side }: { side: string }) {
   const drawCircle = {
     hidden: { scale: 0, opacity: 0 },
     visible: (i: number) => {
-      let delay: number;
-      i === -1 ? (delay = i * -0.2 - 0.2) : (delay = 1 + i * 0.2);
+      let delay;
+      if (i === -1) {
+        delay = i * -0.2 - 0.2;
+      } else {
+        delay = 1 + i * 0.2;
+      }
       return {
         scale: 1,
         opacity: 1,

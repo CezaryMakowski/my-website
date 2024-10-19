@@ -19,7 +19,7 @@ export default function ContactForm() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   async function onSubmit(data: TsendData) {
-    let URL = process.env.NEXT_PUBLIC_URL as string;
+    const URL = process.env.NEXT_PUBLIC_URL as string;
     try {
       const res = await fetch(`${URL}/api/send`, {
         method: "POST",

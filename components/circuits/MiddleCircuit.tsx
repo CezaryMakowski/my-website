@@ -23,7 +23,11 @@ export default function MiddleCircuit({ klasa }: { klasa: string }) {
     hidden: { scale: 0, opacity: 0 },
     visible: (i: number) => {
       let delay: number;
-      i === -1 ? (delay = i * -0.2) : (delay = 1 + i * 0.2);
+      if (i === -1) {
+        delay = i * -0.2;
+      } else {
+        delay = 1 + i * 0.2;
+      }
       return {
         scale: 1,
         opacity: 1,
