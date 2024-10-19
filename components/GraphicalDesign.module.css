@@ -1,0 +1,110 @@
+.section {
+  margin-top: 350px;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding: 30px 40px;
+}
+
+.section ol,
+.section ul {
+  text-align: left;
+  font-family: var(--vt323);
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.section ol li:not(:last-child),
+.section ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  padding-inline: 20px;
+}
+
+.circuit_top {
+  position: absolute;
+  top: -120px;
+  left: -100px;
+  width: 550px;
+  height: auto;
+  z-index: -1;
+}
+
+.circuit_bottom {
+  position: absolute;
+  bottom: -130px;
+  right: -120px;
+  width: 550px;
+  height: auto;
+  z-index: -1;
+}
+
+.paint_can {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  translate: 60% 60%;
+  width: 200px;
+  height: auto;
+}
+
+.palette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+  width: 230px;
+  height: auto;
+}
+
+.circuit {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .section {
+    margin-top: 200px;
+    padding-inline: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .palette,
+  .paint_can,
+  .circuit_bottom,
+  .circuit_top {
+    display: none;
+  }
+
+  .circuit {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    rotate: 90deg;
+    top: 0;
+    left: 50%;
+    translate: -50% -81%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .button_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

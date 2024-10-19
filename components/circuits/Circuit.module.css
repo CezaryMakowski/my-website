@@ -1,0 +1,26 @@
+.circuit {
+  position: absolute;
+  z-index: -1;
+  height: 90%;
+  width: auto;
+}
+
+.circuit.left {
+  top: 50%;
+  left: 0;
+  translate: -73% -50%;
+  scale: 1 -1;
+}
+
+.circuit.right {
+  top: 50%;
+  right: 0;
+  translate: 73% -50%;
+  scale: -1 1;
+}
+
+@media (max-width: 965px) {
+  .circuit {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+.pixel_btn {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background-color: var(--background);
+  width: fit-content;
+  padding: 12px 30px;
+  margin-inline: auto;
+}
+
+.text {
+  color: var(--main);
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-shadow: 0 0 10px var(--main);
+  transition: all 0.1s;
+}
+
+.pixel_btn:hover .text {
+  text-shadow: 0 0 10px var(--main), 0 0 5px var(--main);
+}
+
+.black_pixels,
+.light_pixels {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: auto;
+  top: 0;
+}
+
+.black_pixels.left {
+  left: 0;
+  translate: -100%;
+}
+
+.light_pixels.left {
+  left: 0;
+}
+
+.black_pixels.right {
+  right: 0;
+  translate: 100%;
+  scale: -1 -1;
+}
+
+.light_pixels.right {
+  right: 0;
+  scale: -1 -1;
+}

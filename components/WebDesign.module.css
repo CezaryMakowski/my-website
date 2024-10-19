@@ -1,0 +1,46 @@
+.section {
+  position: relative;
+}
+
+.container {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.glow_container {
+  max-width: 1000px;
+}
+
+.button_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+
+.section ol,
+.section ul {
+  text-align: left;
+  font-family: var(--vt323);
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.section ol li:not(:last-child),
+.section ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .button_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

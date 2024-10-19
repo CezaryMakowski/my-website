@@ -1,0 +1,25 @@
+.section {
+  margin-top: 250px;
+}
+
+.title {
+  margin-bottom: 40px;
+  padding-inline: 20px;
+}
+
+.icon {
+  display: block;
+  margin: auto;
+}
+
+.subtitle {
+  color: var(--main);
+  text-align: center;
+  text-shadow: 0 0 10px var(--main), 0 0 5px var(--main);
+}
+
+@media (max-width: 800px) {
+  .section {
+    margin-top: 150px;
+  }
+}

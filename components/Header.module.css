@@ -1,0 +1,144 @@
+.section {
+  background-color: #021133;
+  padding-inline: 40px;
+  padding-top: 20px;
+  max-width: 1700px;
+  margin: auto;
+}
+
+.section.dark {
+  background-color: var(--background);
+}
+
+.nav_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+}
+
+.nav_container.middle {
+  justify-content: center;
+}
+
+.nav_container a {
+  text-decoration: none;
+  color: var(--main);
+  font-family: var(--vt323);
+  text-shadow: 0 0 15px var(--main), 0 0 10px var(--main);
+  font-size: 2.2rem;
+  transition: all 0.1s;
+}
+
+.nav_container a:hover {
+  text-shadow: 0 0 10px var(--main);
+}
+
+.icon {
+  display: none;
+  position: relative;
+  width: 60px;
+  height: 40px;
+  margin-left: auto;
+  margin-bottom: -20px;
+}
+
+.icon .top,
+.icon .middle,
+.icon .bottom {
+  width: 70%;
+  height: 5px;
+  background-color: var(--main);
+}
+
+.icon .top {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  translate: -50%;
+}
+
+.icon .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.icon .bottom {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  translate: -50%;
+}
+
+.mobile_nav_background {
+  scale: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  translate: 50% -50%;
+  width: 150vw;
+  height: 120vh;
+  border-radius: 50%;
+  background-color: var(--main);
+  box-shadow: 0 0 100px var(--background);
+  padding-top: 50%;
+  padding-right: 50%;
+  z-index: 999;
+  transition: scale 0.3s;
+}
+
+.mobile_nav_background.visible {
+  scale: 1;
+}
+
+.mobile_nav {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 20px;
+}
+
+.mobile_nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--background);
+  font-family: var(--vt323);
+  font-size: 2rem;
+  opacity: 0;
+  translate: -10px;
+  pointer-events: none;
+}
+
+.mobile_nav.visible a {
+  opacity: 1;
+  translate: 0;
+  pointer-events: all;
+  z-index: 9999;
+}
+
+.mobile_nav.visible a:nth-child(1) {
+  transition: all 0.3s 0.2s;
+}
+.mobile_nav.visible a:nth-child(2) {
+  transition: all 0.3s 0.3s;
+}
+.mobile_nav.visible a:nth-child(3) {
+  transition: all 0.3s 0.4s;
+}
+.mobile_nav.visible a:nth-child(4) {
+  transition: all 0.3s 0.5s;
+}
+
+@media (max-width: 860px) {
+  .nav_container {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  --background: #00001c;
+  --main: #b3e0c7;
+  --secondary: #6eb5a8;
+}
+
+html {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100vw;
+}
+
+main {
+  max-width: 1700px;
+  margin: auto;
+}
+
+html,
+body {
+  background: var(--background);
+  overflow-x: hidden;
+  position: relative;
+  z-index: -2;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--vt323);
+  font-size: 2.2rem;
+  color: var(--main);
+  font-weight: 400;
+  text-shadow: 0 0 15px var(--main), 0 0 10px var(--main);
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--orbitron);
+  color: var(--background);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: var(--vt323);
+  font-size: 1.5rem;
+  color: var(--background);
+}
+
+.glow {
+  text-align: center;
+  position: relative;
+  padding: 20px 25px;
+  background: var(--main);
+  border-radius: 25px;
+  box-shadow: 0 0 40px var(--main);
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
