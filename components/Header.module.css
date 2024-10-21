@@ -10,6 +10,12 @@
   background-color: var(--background);
 }
 
+.github {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .nav_container {
   display: flex;
   justify-content: flex-end;
@@ -134,6 +140,10 @@
 }
 
 @media (max-width: 860px) {
+  .section {
+    padding-inline: 20px;
+  }
+
   .nav_container {
     display: none;
   }

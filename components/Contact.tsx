@@ -16,6 +16,10 @@ export default function Contact() {
         <CircuitContact className={styles.right} />
         <ContactForm />
       </div>
+      <div className={styles.contactInfo}>
+        <span>Tel: +48 501 530 155</span>
+        <span>email: cezary.makowski96@gmail.com</span>
+      </div>
     </section>
   );
 }

@@ -4,6 +4,8 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import TypeEffect from "./utils/TypeEffect";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Header({
   middle,
@@ -25,6 +27,21 @@ export default function Header({
 
   return (
     <section className={`${styles.section} ${darkBg && styles.dark}`}>
+      <motion.div
+        className={styles.github}
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.7, type: "spring" }}
+      >
+        <Link href="https://github.com/CezaryMakowski" target="_blank">
+          <Image
+            src={"/icons/github.svg"}
+            alt="github-profile"
+            width={50}
+            height={50}
+          />
+        </Link>
+      </motion.div>
       <div
         onClick={(e) => {
           e.stopPropagation();
