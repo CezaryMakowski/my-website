@@ -17,8 +17,14 @@ export default function Contact() {
         <ContactForm />
       </div>
       <div className={styles.contactInfo}>
-        <span>Tel: +48 501 530 155</span>
-        <span>email: cezary.makowski96@gmail.com</span>
+        <div>
+          <span>Tel:</span>
+          <span>+48 501 530 155</span>
+        </div>
+        <div>
+          <span>email:</span>
+          <span>cezary.makowski96@gmail.com</span>
+        </div>
       </div>
     </section>
   );
