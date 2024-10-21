@@ -49,9 +49,9 @@ export default function WebDesign() {
                 <li>
                   <strong>Dedykowany projekt</strong> - Jeśli zależy Ci na
                   maksymalnej personalizacji i optymalnej wydajności, to
-                  rozwiązanie bez użycia systemu CMS będzie strzałem w
-                  dziesiątkę. Wyższa cena, ale brak jakichkolwiek ograniczeń i
-                  jeszcze szybsze działanie strony.
+                  rozwiązanie bez użycia zewnętrznego systemu CMS będzie
+                  strzałem w dziesiątkę. Wyższa cena, ale brak jakichkolwiek
+                  ograniczeń i jeszcze szybsze działanie strony.
                 </li>
               </ul>
             </li>

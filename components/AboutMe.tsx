@@ -15,12 +15,15 @@ export default function AboutMe() {
           <p>
             Jestem webdeveloperem i grafikiem komputerowym z prawdziwą pasją do
             tego, co robię. Każdy projekt to dla mnie nowe wyzwanie i okazja, by
-            stworzyć coś wyjątkowego. Dzięki indywidualnemu podejściu i pełnemu
-            zaangażowaniu w każdy etap pracy, moi klienci mogą liczyć na
-            kreatywne i dopracowane rozwiązania, które spełniają ich
-            oczekiwania. Moim celem jest tworzenie stron i projektów
-            graficznych, które nie tylko świetnie wyglądają, ale także
-            skutecznie realizują zamierzone cele
+            stworzyć coś wyjątkowego. Stale poszerzam swoją wiedzę, aby być na
+            bieżąco z najnowszymi technologiami, które dynamicznie się
+            rozwijają. W swojej pracy wykorzystuję również sztuczną
+            inteligencję, która pozwala mi na jeszcze bardziej efektywne
+            tworzenie innowacyjnych projektów i usprawnienie procesu
+            kreatywnego. Moje wieloletnie doświadczenie sprawia, że potrafię
+            tworzyć rozwiązania, które są zarówno estetyczne, jak i
+            funkcjonalne, a jednocześnie dostosowane do indywidualnych potrzeb
+            każdego klienta.
           </p>
         </div>
       </div>

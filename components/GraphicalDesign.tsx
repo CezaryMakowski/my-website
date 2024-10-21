@@ -30,8 +30,8 @@ export default function GraphicalDesign() {
         </p>
         <ul>
           <li>
-            <strong>projektowanie plakatów</strong>, które przyciągną uwagę
-            Twojej publiczności,
+            <strong>materiały reklamowe</strong>, które pomogą ci pryciągnąć
+            klientów do twojego biznesu,
           </li>
           <li>
             <strong>wizytówki</strong>, które pozostawią trwałe wrażenie,
@@ -41,15 +41,15 @@ export default function GraphicalDesign() {
             marki,
           </li>
           <li>
-            oraz <strong>materiały reklamowe</strong>,{" "}
-            <strong>grafiki na social media</strong> i{" "}
-            <strong>projekty opakowań</strong>
+            oraz <strong>plakaty</strong>,{" "}
+            <strong>grafiki na social media</strong>,{" "}
+            <strong>projekty opakowań</strong> i wiele więcej
           </li>
         </ul>
         <p>
           Jako grafik komputerowy oferuję kompleksowe tworzenie identyfikacji
           wizualnej - od logo, przez paletę kolorów, po spójne materiały
-          reklamowe. Dobrze zaprojektowana identyfikacja wizualna nie tylko
+          promocyjne. Dobrze zaprojektowana identyfikacja wizualna nie tylko
           buduje rozpoznawalność marki, ale także budzi zaufanie klientów.
           Dzięki spójnej i estetycznej oprawie graficznej Twoja firma będzie
           łatwo zapamiętana, a to przełoży się na lepsze wyniki biznesowe.
