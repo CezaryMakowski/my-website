@@ -20,7 +20,6 @@ export default function ContactForm() {
 
   async function onSubmit(data: TsendData) {
     const URL = process.env.NEXT_PUBLIC_URL as string;
-    console.log(URL);
     try {
       const res = await fetch(`${URL}/api/send`, {
         method: "POST",
