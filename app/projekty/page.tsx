@@ -39,11 +39,11 @@ export default function Projekty() {
           title="wizytówka-mutarete"
           mobileSrc="/Joanna-gabinet-mobile.png"
         />
-        <PortfolioModule
+        {/* <PortfolioModule
           src="/zaproszenie-wesele.png"
           title="wizytówka-na-wesele"
           mobileSrc="/zaproszenie-wesele-mobile.png"
-        />
+        /> */}
       </main>
       <Footer />
     </>
