@@ -3,7 +3,7 @@ import { Audiowide, VT323 } from "next/font/google";
 import "./globals.css";
 import SocialMedia from "../components/utils/SocialMedia";
 import styles from "./layout.module.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const bungee = Audiowide({
   variable: "--orbitron",
@@ -32,6 +32,7 @@ export default function RootLayout({
         {children}
       </body>
       <GoogleAnalytics gaId="G-J59QCYVWFJ" />
+      <GoogleTagManager gtmId="AW-10937908128" />
     </html>
   );
 }
