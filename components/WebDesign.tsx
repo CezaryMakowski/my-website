@@ -34,7 +34,7 @@ export default function WebDesign() {
               <strong>Elastyczność cenowa</strong> - Jako freelancer mogę
               zaoferować bardziej konkurencyjne ceny w porównaniu do dużych
               firm, bez utraty jakości. Koszt stworzenia strony typu landing
-              page zaczyna się już od 1500 zł.
+              page zaczyna się już od 1000 zł.
             </li>
             <li>
               <strong>Indywidualne podejście do budżetu i technologii</strong> -
