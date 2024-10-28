@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
   try {
     const { data, error } = await resend.emails.send({
       from: `${result.data.name} <kontakt@designandweb.dev>`,
-      to: [result.data.email],
+      to: ["cezary.makowski96@gmail.com"],
       subject: `masz nową wiadomość od ${result.data.name}`,
       text: result.data.message,
     });
