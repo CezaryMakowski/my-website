@@ -68,7 +68,7 @@
   font-family: var(--vt323);
   font-size: 2rem;
   color: var(--background);
-  box-shadow: 0 0 30px var(--main);
+  box-shadow: 0 0 30px var(--background);
 }
 
 @media (max-width: 600px) {
