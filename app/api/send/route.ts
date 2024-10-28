@@ -15,6 +15,7 @@ export async function POST(req: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: `${result.data.name} <kontakt@designandweb.dev>`,
       to: ["cezary.makowski96@gmail.com"],
+      replyTo: result.data.email,
       subject: `masz nową wiadomość od ${result.data.name}`,
       text: result.data.message,
     });
