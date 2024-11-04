@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import styles from "./GraphCard.module.css";
-import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 
