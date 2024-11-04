@@ -1,7 +1,7 @@
 .section {
   margin-top: 200px;
   overflow: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .section h2 {
@@ -21,7 +21,6 @@
 
 .swiper_slide {
   max-width: 500px;
-  /* width: 100%; */
 }
 
 .slide_image {
@@ -46,10 +45,11 @@
   height: 15px;
   background-color: var(--secondary);
   transition: all 0.15s ease-in-out;
+  box-shadow: 0 0 5px var(--main);
 }
 
 .pagination_bullet:hover {
-  scale: 1.5;
+  scale: 1.3;
 }
 
 .pagination_bullet.active {
