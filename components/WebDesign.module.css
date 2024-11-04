@@ -36,11 +36,28 @@
   margin-bottom: 10px;
 }
 
+.circuit {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .button_container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  .circuit {
+    display: block;
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    rotate: 90deg;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 60%;
+    z-index: -1;
   }
 }

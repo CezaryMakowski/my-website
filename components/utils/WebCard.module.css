@@ -1,0 +1,38 @@
+.anchor {
+  text-decoration: none;
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  padding-inline: 0;
+  position: relative;
+  padding-left: 0;
+  padding-right: 10px;
+  margin: auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: -50% calc(100% + 20px);
+  color: var(--main);
+  font-family: var(--vt323);
+  font-weight: 400;
+  text-shadow: 0 0 15px var(--main), 0 0 10px var(--main);
+  transition: text-shadow 0.1s ease-in-out;
+}
+
+.title:hover {
+  text-shadow: 0 0 15px var(--main);
+}

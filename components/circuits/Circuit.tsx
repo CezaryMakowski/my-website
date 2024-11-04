@@ -1,9 +1,14 @@
 "use client";
 
+import { ComponentPropsWithoutRef } from "react";
 import styles from "./Circuit.module.css";
 import { motion } from "framer-motion";
 
-export default function Circuit({ side }: { side: string }) {
+interface circuitProps extends ComponentPropsWithoutRef<"svg"> {
+  side: string;
+}
+
+export default function Circuit({ side, ...props }: circuitProps) {
   const margin = "-150px 0px -150px 0px";
   const drawLine = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -42,7 +47,8 @@ export default function Circuit({ side }: { side: string }) {
 
   return (
     <svg
-      className={`${styles.circuit} ${styles[side]}`}
+      {...props}
+      className={`${styles.circuit} ${styles[side]} ${props.className}`}
       width="507"
       height="480"
       viewBox="0 0 507 480"

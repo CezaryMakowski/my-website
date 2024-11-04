@@ -176,7 +176,7 @@ export default function Footer() {
         <div className={styles.nav_container}>
           <Link href={"/"}>Strona Główna</Link>
           <Link href={"/#o-mnie"}>O Mnie</Link>
-          <Link href={"/projekty"}>Moje Prace</Link>
+          <Link href={"/cennik"}>Cennik</Link>
           <Link href={"/#kontakt"}>Kontakt</Link>
         </div>
       </div>

@@ -18,9 +18,3 @@
   translate: 73% -50%;
   scale: -1 1;
 }
-
-@media (max-width: 965px) {
-  .circuit {
-    display: none;
-  }
-}

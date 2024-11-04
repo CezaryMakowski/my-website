@@ -1,5 +1,5 @@
 .section {
-  margin-top: 350px;
+  margin-top: 200px;
   position: relative;
 }
 
@@ -74,7 +74,7 @@
 
 @media (max-width: 800px) {
   .section {
-    margin-top: 200px;
+    margin-top: 120px;
     padding-inline: 20px;
   }
 
@@ -93,11 +93,12 @@
     display: block;
     position: absolute;
     width: 90%;
+    max-width: 500px;
     height: auto;
     rotate: 90deg;
-    top: 0;
+    bottom: 0;
     left: 50%;
-    translate: -50% -81%;
+    translate: -50% 60%;
     z-index: -1;
   }
 }

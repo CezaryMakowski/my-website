@@ -21,8 +21,8 @@ export default function PortfolioModule({
         <Link href={"https://" + title} target="_blank">
           <div className={styles.container}>
             <div className={`${"glow"} ${styles.img_container}`}>
-              <Circuit side="left" />
-              <Circuit side="right" />
+              <Circuit side="left" className={styles.circuit} />
+              <Circuit side="right" className={styles.circuit} />
               <Image
                 src={src}
                 alt={title}
@@ -40,8 +40,8 @@ export default function PortfolioModule({
       {!link && (
         <div className={styles.container}>
           <div className={`${"glow"} ${styles.img_container}`}>
-            <Circuit side="left" />
-            <Circuit side="right" />
+            <Circuit side="left" className={styles.circuit} />
+            <Circuit side="right" className={styles.circuit} />
             <Image
               src={src}
               alt={title}

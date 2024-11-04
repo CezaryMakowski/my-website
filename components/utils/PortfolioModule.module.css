@@ -51,6 +51,10 @@
   .img_container {
     width: 100%;
   }
+
+  .circuit {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {

@@ -6,8 +6,9 @@ import MiddleCircuit from "./circuits/MiddleCircuit";
 export default function GraphicalDesign() {
   return (
     <section className={styles.section} id="graphical-design">
-      <MiddleCircuit klasa={styles.circuit} />
       <div className={`glow ${styles.container}`}>
+        <MiddleCircuit className={styles.circuit} />
+
         <Image
           className={styles.circuit_top}
           src="/circuits/graphical-circuit-top.png"
@@ -80,7 +81,7 @@ export default function GraphicalDesign() {
         </p>
         <p>Skontaktuj się ze mną i wspólnie stwórzmy coś wyjątkowego!</p>
         <div className={styles.button_container}>
-          <PixelBtn href="/projekty">Moje Projekty</PixelBtn>
+          <PixelBtn href="/cennik/#projekty-graficzne">Cennik</PixelBtn>
           <PixelBtn href="/#kontakt">Poproś o Wycenę</PixelBtn>
         </div>
         <Image

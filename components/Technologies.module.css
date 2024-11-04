@@ -1,5 +1,9 @@
 .section {
-  margin-top: 250px;
+  margin-top: 150px;
+}
+
+.swiper > div {
+  transition-timing-function: linear;
 }
 
 .title {

@@ -1,0 +1,8 @@
+.container {
+  overflow: visible !important;
+}
+
+.slide > img {
+  width: 100%;
+  height: auto;
+}

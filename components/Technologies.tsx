@@ -17,15 +17,17 @@ export default function Technologies() {
         <TypeEffect>Używam</TypeEffect>
       </h2>
       <Swiper
+        className={styles.swiper}
         spaceBetween={20}
         slidesPerView={3}
+        speed={2000}
         breakpoints={{
           800: { spaceBetween: 40, slidesPerView: 6 },
           700: { spaceBetween: 30, slidesPerView: 5 },
           600: { spaceBetween: 20, slidesPerView: 4 },
         }}
         loop
-        autoplay={{ delay: 1000 }}
+        autoplay={{ delay: 0 }}
         modules={[Autoplay]}
       >
         <SwiperSlide>

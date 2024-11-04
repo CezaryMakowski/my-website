@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ComponentPropsWithoutRef } from "react";
 
-export default function MiddleCircuit({ klasa }: { klasa: string }) {
+export default function MiddleCircuit({
+  ...props
+}: ComponentPropsWithoutRef<"svg">) {
   const viewport = { margin: "-150px 0px -150px 0px", once: true };
   const drawLine = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -41,7 +44,7 @@ export default function MiddleCircuit({ klasa }: { klasa: string }) {
 
   return (
     <svg
-      className={klasa}
+      {...props}
       width="507"
       height="507"
       viewBox="0 0 507 507"

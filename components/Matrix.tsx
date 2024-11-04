@@ -11,7 +11,7 @@ export default function Matrix() {
   const fall = {
     initial: { y: "-100%" },
     falling: (i: number) => {
-      const duration = 3.5 + i * 0.4;
+      const duration = 3 + i * 0.4;
       return {
         y: 0,
         transition: {

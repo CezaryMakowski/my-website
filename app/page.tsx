@@ -8,6 +8,8 @@ import Technologies from "../components/Technologies";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import WebProjectsShowcase from "@/components/WebProjectsShowcase";
+import GraphProjectsShowcase from "@/components/GraphProjectsShowcase";
 
 export default function Home() {
   return (
@@ -25,7 +27,9 @@ export default function Home() {
         <PoiontsOfInterest />
         <AboutMe />
         <WebDesign />
+        <WebProjectsShowcase />
         <GraphicalDesign />
+        <GraphProjectsShowcase />
         <Technologies />
         <Contact />
       </main>

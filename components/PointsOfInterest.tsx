@@ -9,10 +9,10 @@ import PixelBtn from "./utils/PixelLink";
 export default function PoiontsOfInterest() {
   return (
     <section className={styles.section}>
-      <MiddleCircuit klasa={styles.circuit} />
+      <MiddleCircuit className={styles.circuit} />
       <div className={styles.container}>
         <div className={`glow ${styles.glow_container}`}>
-          <Circuit side="left" />
+          <Circuit side="left" className={styles.side_circuit} />
           <Image
             className={`${styles.image} ${styles.left}`}
             src="/projekty-graficzne-grafika.png"
@@ -35,7 +35,7 @@ export default function PoiontsOfInterest() {
       </div>
       <div className={styles.container}>
         <div className={`glow ${styles.glow_container}`}>
-          <Circuit side="right" />
+          <Circuit side="right" className={styles.side_circuit} />
           <Image
             className={styles.image}
             src="/projektowanie-stron-grafika.png"

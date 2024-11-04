@@ -17,6 +17,8 @@ body {
 main {
   max-width: 1700px;
   margin: auto;
+  box-shadow: 40px 0 50px -65px var(--main), -40px 0 50px -65px var(--main);
+  padding-bottom: 100px;
 }
 
 html,

@@ -38,7 +38,7 @@ export default function Header({
       >
         <Link href={"/"}>Strona Główna</Link>
         <Link href={"/#o-mnie"}>O Mnie</Link>
-        <Link href={"/projekty"}>Moje Prace</Link>
+        <Link href={"/cennik"}>Cennik</Link>
         <Link href={"/#kontakt"}>Kontakt</Link>
       </div>
       <div
@@ -59,8 +59,8 @@ export default function Header({
         <Link href={"/#o-mnie"}>
           <TypeEffect>O Mnie</TypeEffect>
         </Link>
-        <Link href={"/projekty"}>
-          <TypeEffect>Moje Prace</TypeEffect>
+        <Link href={"/cennik"}>
+          <TypeEffect>Cennik</TypeEffect>
         </Link>
         <Link href={"/#kontakt"}>
           <TypeEffect>Kontakt</TypeEffect>

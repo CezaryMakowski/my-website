@@ -1,12 +1,15 @@
 import styles from "./WebDesign.module.css";
 import PixelBtn from "./utils/PixelLink";
 import Matrix from "./Matrix";
+import MiddleCircuit from "./circuits/MiddleCircuit";
 
 export default function WebDesign() {
   return (
     <section className={styles.section} id="web-design">
       <Matrix />
       <div className={styles.container}>
+        <MiddleCircuit className={styles.circuit} />
+
         <div className={`glow ${styles.glow_container}`}>
           <h3>Projektowanie Stron Internetowych</h3>
           <p>
@@ -68,7 +71,7 @@ export default function WebDesign() {
             która pracuje dla Ciebie!
           </p>
           <div className={styles.button_container}>
-            <PixelBtn href="/projekty">Moje Projekty</PixelBtn>
+            <PixelBtn href="/cennik/#strony-internetowe">Cennik</PixelBtn>
             <PixelBtn href="/#kontakt">Poproś o Wycenę</PixelBtn>
           </div>
         </div>
