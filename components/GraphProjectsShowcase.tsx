@@ -51,8 +51,8 @@ export default function WebProjectsShowcase() {
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slide}>
           <GraphCard
-            rewSrc="/joanna-gabinet-rewers.png"
-            awSrc="/joanna-gabinet-awers.png"
+            rewSrc="/gabinet-psychoterapia-rewers.png"
+            awSrc="/gabinet-psychoterapia-awers.png"
             alt="joanna gabinet wizytówka"
           />
         </SwiperSlide>
