@@ -15,8 +15,6 @@ export default function GraphCard({
   awSrc: string;
   rewSrc: string;
 }) {
-  const [isHover, setisHover] = useState(false);
-
   return (
     <Swiper
       className={styles.container}
