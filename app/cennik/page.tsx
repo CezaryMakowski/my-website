@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import checked from "@/public/checkedmark.svg";
-import unChecked from "@/public/uncheckedmark.svg";
+// import unChecked from "@/public/uncheckedmark.svg";
 import PixelLink from "../../components/utils/PixelLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
