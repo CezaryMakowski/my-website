@@ -20,6 +20,7 @@ export default function WebProjectsShowcase() {
         initialSlide={2}
         allowTouchMove={false}
         spaceBetween={200}
+        slideToClickedSlide
         speed={1200}
         centeredSlides
         pagination={{
