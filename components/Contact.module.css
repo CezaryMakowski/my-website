@@ -55,6 +55,11 @@
   gap: 10px;
 }
 
+.contactInfo a {
+  color: var(--main);
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .container {
     padding-inline: 15px;
