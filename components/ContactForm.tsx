@@ -62,7 +62,12 @@ export default function ContactForm() {
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
         )}
-        <PixelBtn disabled={isSubmitting} id="submit">
+        <PixelBtn
+          disabled={isSubmitting}
+          onClick={() => {
+            window.dataLayer?.push({ event: "submitted" });
+          }}
+        >
           Wyślij
         </PixelBtn>
       </form>
