@@ -8,7 +8,11 @@ interface pixelBtnProps extends ComponentPropsWithoutRef<"button"> {
 
 export default function PixelBtn({ children, ...props }: pixelBtnProps) {
   return (
-    <button className={styles.pixel_btn} {...props}>
+    <button
+      className={styles.pixel_btn}
+      onClick={(e) => e.stopPropagation()}
+      {...props}
+    >
       <Image
         className={`${styles.black_pixels} ${styles.left}`}
         src={"/black-pixels.svg"}
