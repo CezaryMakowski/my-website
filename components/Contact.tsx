@@ -19,7 +19,7 @@ export default function Contact() {
       <div className={styles.contactInfo}>
         <div>
           <span>Tel:</span>
-          <a href="tel:48501530155">+48 501 530 155</a>
+          <a href="tel:+48501530155">+48 501 530 155</a>
         </div>
         <div>
           <span>email:</span>
