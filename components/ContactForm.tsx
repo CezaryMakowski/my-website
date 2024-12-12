@@ -62,7 +62,9 @@ export default function ContactForm() {
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
         )}
-        <PixelBtn disabled={isSubmitting}>Wyślij</PixelBtn>
+        <PixelBtn disabled={isSubmitting} id="submit">
+          Wyślij
+        </PixelBtn>
       </form>
       <AnimatePresence>
         {isSuccess && (
