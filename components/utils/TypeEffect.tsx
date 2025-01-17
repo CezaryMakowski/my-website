@@ -2,7 +2,11 @@
 
 import { motion } from "framer-motion";
 
-export default function TypeEffect({ children }: { children: string }) {
+export default function TypeEffect({
+  children,
+}: {
+  children: string | string[];
+}) {
   return (
     <>
       {Array.from(children).map((letter, i) => (

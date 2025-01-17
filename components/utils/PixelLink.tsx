@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./PixelLink.module.css";
-import Link, { LinkProps } from "next/link";
+import { LinkProps } from "next/link";
+import { Link } from "@/i18n/routing";
 
 interface pixelBtnProps extends LinkProps {
-  children: string;
+  children: string | string[];
   href: string;
+  locale?: string | undefined;
 }
 
 export default function PixelBtn({ children, href, ...props }: pixelBtnProps) {

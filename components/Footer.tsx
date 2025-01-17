@@ -1,11 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import styles from "./Footer.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Navbar");
   const pixelSize = 15;
   const [pixelNumber, setPixelNumber] = useState<number | null>(null);
   const [isClient, setIsClient] = useState(false);
@@ -174,10 +176,10 @@ export default function Footer() {
           </div>
         )}
         <div className={styles.nav_container}>
-          <Link href={"/"}>Strona Główna</Link>
-          <Link href={"/#o-mnie"}>O Mnie</Link>
-          <Link href={"/cennik"}>Cennik</Link>
-          <Link href={"/#kontakt"}>Kontakt</Link>
+          <Link href={"/"}>{t("Homepage")}</Link>
+          <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
+          <Link href={"/cennik"}>{t("Pricing")}</Link>
+          <Link href={"/#kontakt"}>{t("Contact")}</Link>
         </div>
       </div>
     </footer>

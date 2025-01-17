@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import TypeEffect from "./utils/TypeEffect";
+import { useTranslations } from "next-intl";
 
 export default function Header({
   middle,
@@ -12,6 +13,7 @@ export default function Header({
   middle?: boolean;
   darkBg?: boolean;
 }) {
+  const t = useTranslations("Navbar");
   const [sidebarVisible, setSidebarVisible] = useState(false);
   useEffect(() => {
     function clickHandler() {
@@ -36,10 +38,10 @@ export default function Header({
       <div
         className={`${styles.mobile_nav} ${sidebarVisible && styles.visible}`}
       >
-        <Link href={"/"}>Strona Główna</Link>
-        <Link href={"/#o-mnie"}>O Mnie</Link>
-        <Link href={"/cennik"}>Cennik</Link>
-        <Link href={"/#kontakt"}>Kontakt</Link>
+        <Link href={"/"}>{t("Homepage")}</Link>
+        <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
+        <Link href={"/cennik"}>{t("Pricing")}</Link>
+        <Link href={"/#kontakt"}>{t("Contact")}</Link>
       </div>
       <div
         className={styles.icon}
@@ -54,16 +56,16 @@ export default function Header({
       </div>
       <div className={`${styles.nav_container} ${middle && styles.middle}`}>
         <Link href={"/"}>
-          <TypeEffect>Strona Główna</TypeEffect>
+          <TypeEffect>{t("Homepage")}</TypeEffect>
         </Link>
         <Link href={"/#o-mnie"}>
-          <TypeEffect>O Mnie</TypeEffect>
+          <TypeEffect>{t("Aboutme")}</TypeEffect>
         </Link>
         <Link href={"/cennik"}>
-          <TypeEffect>Cennik</TypeEffect>
+          <TypeEffect>{t("Pricing")}</TypeEffect>
         </Link>
         <Link href={"/#kontakt"}>
-          <TypeEffect>Kontakt</TypeEffect>
+          <TypeEffect>{t("Contact")}</TypeEffect>
         </Link>
       </div>
     </section>

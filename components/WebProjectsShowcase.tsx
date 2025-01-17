@@ -5,13 +5,15 @@ import { Autoplay, EffectCoverflow } from "swiper/modules";
 import styles from "./WebProjectsShowcase.module.css";
 import WebCard from "./utils/WebCard";
 import TypeEffect from "./utils/TypeEffect";
+import { useTranslations } from "next-intl";
 
 export default function WebProjectsShowcase() {
+  const t = useTranslations("Homepage.Latestwebdesigns");
   return (
     <section className={styles.section}>
       <h2>
-        <TypeEffect>Ostatnie </TypeEffect>
-        <TypeEffect>Projekty</TypeEffect>
+        <TypeEffect>{t("Title1")}</TypeEffect>
+        <TypeEffect>{t("Title2")}</TypeEffect>
       </h2>
       <Swiper
         className={styles.swiper_container}

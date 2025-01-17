@@ -2,14 +2,14 @@ import styles from "./Contact.module.css";
 import TypeEffect from "./utils/TypeEffect";
 import CircuitContact from "./circuits/CircuitContact";
 import ContactForm from "./ContactForm";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("Homepage.Contact");
   return (
     <section className={styles.section} id="kontakt">
       <h2 className={styles.title}>
-        <TypeEffect>Zapraszam </TypeEffect>
-        <TypeEffect>do </TypeEffect>
-        <TypeEffect>Kontaktu</TypeEffect>
+        <TypeEffect>{t("Title")}</TypeEffect>
       </h2>
       <div className={styles.container}>
         <CircuitContact className={styles.left} />

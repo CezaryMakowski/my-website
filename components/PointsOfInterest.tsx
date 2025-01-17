@@ -2,11 +2,13 @@ import Image from "next/image";
 import styles from "./PointsOfInterest.module.css";
 import MiddleCircuit from "./circuits/MiddleCircuit";
 import Circuit from "./circuits/Circuit";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import TypeEffect from "./utils/TypeEffect";
 import PixelBtn from "./utils/PixelLink";
+import { useTranslations } from "next-intl";
 
 export default function PoiontsOfInterest() {
+  const t = useTranslations("Homepage.Pointsofinterest");
   return (
     <section className={styles.section}>
       <MiddleCircuit className={styles.circuit} />
@@ -21,16 +23,12 @@ export default function PoiontsOfInterest() {
             height={750}
           />
 
-          <h3>Grafika Komputerowa</h3>
-          <p>
-            Potrzebujesz profesjonalnych materiałów graficznych, które wyróżnią
-            Twoją markę? Skontaktuj się ze mną! Oferuję indywidualne podejście,
-            konkurencyjne ceny i pełne zaangażowanie w Twój projekt
-          </p>
-          <PixelBtn href="/#graphical-design">Zobacz Więcej</PixelBtn>
+          <h3>{t("Graphtitle")}</h3>
+          <p>{t("GraphContent")}</p>
+          <PixelBtn href="/#graphical-design">{t("Button")}</PixelBtn>
         </div>
         <Link href="/#graphical-design" className={styles.button}>
-          <TypeEffect>Zobacz Więcej</TypeEffect>
+          <TypeEffect>{t("Button")}</TypeEffect>
         </Link>
       </div>
       <div className={styles.container}>
@@ -43,16 +41,12 @@ export default function PoiontsOfInterest() {
             width={750}
             height={750}
           />
-          <h3>Strony Internetowe</h3>
-          <p>
-            Chcesz mieć stronę internetową, która przyciągnie klientów i wyróżni
-            Twoją firmę? Skontaktuj się ze mną! Tworzę nowoczesne, responsywne
-            strony, dopasowane do Twoich potrzeb.
-          </p>
-          <PixelBtn href="/#web-design">Zobacz Więcej</PixelBtn>
+          <h3>{t("Sitetitle")}</h3>
+          <p>{t("Sitecontent")}</p>
+          <PixelBtn href="/#web-design">{t("Button")}</PixelBtn>
         </div>
         <Link href={"/#web-design"} className={styles.button}>
-          <TypeEffect>Zobacz Więcej</TypeEffect>
+          <TypeEffect>{t("Button")}</TypeEffect>
         </Link>
       </div>
     </section>

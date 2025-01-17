@@ -7,14 +7,18 @@ import "swiper/css/autoplay";
 import styles from "./Technologies.module.css";
 import Image from "next/image";
 import TypeEffect from "./utils/TypeEffect";
+import { useTranslations } from "next-intl";
 
 export default function Technologies() {
+  const t = useTranslations("Homepage.Technologies");
+
+  const title = t("Title").split(" ");
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>
-        <TypeEffect>Technologie </TypeEffect>
-        <TypeEffect>Jakich </TypeEffect>
-        <TypeEffect>Używam</TypeEffect>
+        <TypeEffect>{title[0] + " "}</TypeEffect>
+        <TypeEffect>{title[1] + " "} </TypeEffect>
+        <TypeEffect>{title[2]}</TypeEffect>
       </h2>
       <Swiper
         className={styles.swiper}

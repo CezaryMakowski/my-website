@@ -2,24 +2,28 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import checked from "@/public/checkedmark.svg";
 // import unChecked from "@/public/uncheckedmark.svg";
-import PixelLink from "../../components/utils/PixelLink";
+import PixelLink from "../../../components/utils/PixelLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TypeEffect from "@/components/utils/TypeEffect";
 import MiddleCircuit from "@/components/circuits/MiddleCircuit";
 import Circuit from "@/components/circuits/Circuit";
+import { useTranslations } from "next-intl";
 
 const CHECKMARK_WIDTH = 20;
 
 export default function Page() {
+  const t = useTranslations("Pricing");
+  const titleWeb = t("Title1").split(" ");
+  const titleGraph = t("Title2").split(" ");
   return (
     <>
       <main>
         <Header middle darkBg />
         <section className={styles.section} id="strony-internetowe">
           <h2>
-            <TypeEffect>Strony </TypeEffect>
-            <TypeEffect>Internetowe</TypeEffect>
+            <TypeEffect>{titleWeb[0] + " "} </TypeEffect>
+            <TypeEffect>{titleWeb[1]}</TypeEffect>
           </h2>
         </section>
         <section
@@ -29,17 +33,14 @@ export default function Page() {
           <div className={`glow ${styles.glow_container}`}>
             <Circuit side="left" className={styles.side_circuit} />
             <Circuit side="right" className={styles.side_circuit} />
-            <h2 className={styles.container_title}>Landing Page/Wizytówka</h2>
+            <h2 className={styles.container_title}>{t("Landingpage.Title")}</h2>
             <div className={styles.price_container}>
-              <p>od</p>
-              <strong>950</strong>
-              <p>zł</p>
+              {t.rich("Landingpage.Price", {
+                p: (content) => <p>{content}</p>,
+                strong: (content) => <strong>{content}</strong>,
+              })}
             </div>
-            <p>
-              Prosta strona internetowa, która pomoże ci zaistnieć w internecie
-              oraz zareklamować oferowane usługi. Idealna do prowadzenia kampani
-              reklamowej w Google lub Facebook
-            </p>
+            <p>{t("Landingpage.Content")}</p>
             <Image
               className={styles.separator}
               src="/circuit-separator.svg"
@@ -55,7 +56,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Roczna gwarancja</span>
+                <span>{t("Landingpage.Listitem1")}</span>
               </li>
               <li>
                 <Image
@@ -64,7 +65,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Szybki kontakt</span>
+                <span>{t("Landingpage.Listitem2")}</span>
               </li>
               <li>
                 <Image
@@ -73,7 +74,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Do 3 zakładek</span>
+                <span>{t("Landingpage.Listitem3")}</span>
               </li>
               <li>
                 <Image
@@ -82,7 +83,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>2 zmiany projektu</span>
+                <span>{t("Landingpage.Listitem4")}</span>
               </li>
               <li>
                 <Image
@@ -91,7 +92,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Slider na zdjęcia</span>
+                <span>{t("Landingpage.Listitem5")}</span>
               </li>
               <li>
                 <Image
@@ -100,7 +101,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Formularz kontaktowy</span>
+                <span>{t("Landingpage.Listitem6")}</span>
               </li>
               <li>
                 <Image
@@ -109,7 +110,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Mapa google</span>
+                <span>{t("Landingpage.Listitem7")}</span>
               </li>
               <li>
                 <Image
@@ -118,7 +119,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Google Analytics</span>
+                <span>{t("Landingpage.Listitem8")}</span>
               </li>
               <li>
                 <Image
@@ -127,26 +128,22 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Integracja z social media</span>
+                <span>{t("Landingpage.Listitem9")}</span>
               </li>
             </ul>
-            <PixelLink href="/#kontakt">Wyślij Zapytanie</PixelLink>
+            <PixelLink href="/#kontakt">{t("Landingpage.Button")}</PixelLink>
           </div>
           <div className={`glow ${styles.glow_container}`}>
             <Circuit side="left" className={styles.side_circuit} />
             <Circuit side="right" className={styles.side_circuit} />
-            <h2 className={styles.container_title}>Blog</h2>
+            <h2 className={styles.container_title}>{t("Blog.Title")}</h2>
             <div className={styles.price_container}>
-              <p>od</p>
-              <strong>2450</strong>
-              <p>zł</p>
+              {t.rich("Blog.Price", {
+                p: (content) => <p>{content}</p>,
+                strong: (content) => <strong>{content}</strong>,
+              })}
             </div>
-            <p>
-              Podczas tworzenia bloga skupiam się przede wszystkim na jego
-              intuicyjnej nawigacji oraz na szybkości działania. Dzięki temu
-              czytelnicy zostają na takiej stronie na dłużej i zdecydowanie
-              chętniej na nią wracają
-            </p>
+            <p>{t("Blog.Content")}</p>
             <Image
               className={styles.separator}
               src="/circuit-separator.svg"
@@ -162,7 +159,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Roczna gwarancja</span>
+                <span>{t("Blog.Listitem1")}</span>
               </li>
               <li>
                 <Image
@@ -171,7 +168,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Szybki kontakt</span>
+                <span>{t("Blog.Listitem2")}</span>
               </li>
               <li>
                 <Image
@@ -180,7 +177,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Do 6 zakładek</span>
+                <span>{t("Blog.Listitem3")}</span>
               </li>
               <li>
                 <Image
@@ -189,7 +186,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>3 zmiany projektu</span>
+                <span>{t("Blog.Listitem4")}</span>
               </li>
               <li>
                 <Image
@@ -198,7 +195,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Czytelny design</span>
+                <span>{t("Blog.Listitem5")}</span>
               </li>
               <li>
                 <Image
@@ -207,7 +204,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Slider z artykułami</span>
+                <span>{t("Blog.Listitem6")}</span>
               </li>
               <li>
                 <Image
@@ -216,7 +213,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Inteligentne sugestie artykułów</span>
+                <span>{t("Blog.Listitem7")}</span>
               </li>
               <li>
                 <Image
@@ -225,7 +222,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Intuicyjność obsługi</span>
+                <span>{t("Blog.Listitem8")}</span>
               </li>
               <li>
                 <Image
@@ -234,7 +231,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Formularz kontaktowy</span>
+                <span>{t("Blog.Listitem9")}</span>
               </li>
               <li>
                 <Image
@@ -243,10 +240,10 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Google Analytics</span>
+                <span>{t("Blog.Listitem10")}</span>
               </li>
             </ul>
-            <PixelLink href="/#kontakt">Wyślij Zapytanie</PixelLink>
+            <PixelLink href="/#kontakt">{t("Blog.Button")}</PixelLink>
           </div>
         </section>
         <section className={`${styles.section} ${styles.eshop_section}`}>
@@ -254,18 +251,14 @@ export default function Page() {
             <MiddleCircuit className={styles.mobile_circuit} />
             <Circuit side="left" className={styles.side_circuit} />
             <Circuit side="right" className={styles.side_circuit} />
-            <h2 className={styles.container_title}>Sklep Internetowy</h2>
+            <h2 className={styles.container_title}>{t("Ecommerce.Title")}</h2>
             <div className={styles.price_container}>
-              <p>od</p>
-              <strong>5000</strong>
-              <p>zł</p>
+              {t.rich("Ecommerce.Price", {
+                p: (content) => <p>{content}</p>,
+                strong: (content) => <strong>{content}</strong>,
+              })}
             </div>
-            <p>
-              Sklep Internetowy podobnie jak blog powinien być przede wszystkim
-              szybki oraz prosty w obsłudze. Zmniejszenie ilości kroków
-              niezbędnych do zakupu oraz zwiększenie ich intuicyjności zapewni
-              więcej konwersji
-            </p>
+            <p>{t("Ecommerce.Content")}</p>
             <Image
               className={styles.separator}
               src="/circuit-separator.svg"
@@ -281,7 +274,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Roczna gwarancja</span>
+                <span> {t("Ecommerce.Listitem1")}</span>
               </li>
               <li>
                 <Image
@@ -290,7 +283,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Szybki kontakt</span>
+                <span>{t("Ecommerce.Listitem2")}</span>
               </li>
               <li>
                 <Image
@@ -299,7 +292,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Nielimitowane zakładki</span>
+                <span>{t("Ecommerce.Listitem3")}</span>
               </li>
               <li>
                 <Image
@@ -308,7 +301,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>3 zmiany projektu</span>
+                <span>{t("Ecommerce.Listitem4")}</span>
               </li>
               <li>
                 <Image
@@ -317,7 +310,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Czytelny design</span>
+                <span>{t("Ecommerce.Listitem5")}</span>
               </li>
               <li>
                 <Image
@@ -326,7 +319,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Slider z produktami</span>
+                <span>{t("Ecommerce.Listitem6")}</span>
               </li>
               <li>
                 <Image
@@ -335,7 +328,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Inteligentne sugestie produktów</span>
+                <span>{t("Ecommerce.Listitem7")}</span>
               </li>
               <li>
                 <Image
@@ -344,7 +337,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Intuicyjność obsługi</span>
+                <span>{t("Ecommerce.Listitem8")}</span>
               </li>
               <li>
                 <Image
@@ -353,7 +346,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Rozbudowany formularz kontaktowy</span>
+                <span>{t("Ecommerce.Listitem9")}</span>
               </li>
               <li>
                 <Image
@@ -362,7 +355,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Upselling</span>
+                <span>{t("Ecommerce.Listitem10")}</span>
               </li>
               <li>
                 <Image
@@ -371,7 +364,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Crosselling</span>
+                <span>{t("Ecommerce.Listitem11")}</span>
               </li>
               <li>
                 <Image
@@ -380,7 +373,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Program Lojalnościowy</span>
+                <span>{t("Ecommerce.Listitem12")}</span>
               </li>
               <li>
                 <Image
@@ -389,7 +382,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Linki Referencyjne dla Promotorów</span>
+                <span>{t("Ecommerce.Listitem13")}</span>
               </li>
               <li>
                 <Image
@@ -398,36 +391,30 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Google Analytics</span>
+                <span>{t("Ecommerce.Listitem14")}</span>
               </li>
             </ul>
-            <PixelLink href="/#kontakt">Wyślij Zapytanie</PixelLink>
+            <PixelLink href="/#kontakt">{t("Ecommerce.Button")}</PixelLink>
           </div>
         </section>
         <section className={styles.section} id="projekty-graficzne">
           <h2>
-            <TypeEffect>Projkty </TypeEffect>
-            <TypeEffect>Graficzne</TypeEffect>
+            <TypeEffect>{titleGraph[0] + " "} </TypeEffect>
+            <TypeEffect>{titleGraph[1]}</TypeEffect>
           </h2>
         </section>
         <section className={`${styles.section} ${styles.graph_section}`}>
           <div className={`glow ${styles.glow_container}`}>
             <Circuit side="left" className={styles.side_circuit} />
             <Circuit side="right" className={styles.side_circuit} />
-            <h2 className={styles.container_title}>
-              Logo, Wizytówka, Ulotka, Zaproszenie itd.
-            </h2>
+            <h2 className={styles.container_title}>{t("GraphDesign.Title")}</h2>
             <div className={styles.price_container}>
-              <p>od</p>
-              <strong>450</strong>
-              <p>zł</p>
+              {t.rich("GraphDesign.Price", {
+                p: (content) => <p>{content}</p>,
+                strong: (content) => <strong>{content}</strong>,
+              })}
             </div>
-            <p>
-              W dzisiejszych czasach reklamy są wszechobecne i bez przerwy
-              jesteśmy bombardowani różnymi treściami. Dlatego właśnie staram
-              się, aby moje projekty jak najbardziej wyróżniały się na tle
-              pozostałych oraz przyciągały uwagę
-            </p>
+            <p>{t("GraphDesign.Content")}</p>
             <Image
               className={styles.separator}
               src="/circuit-separator.svg"
@@ -443,7 +430,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Szybki kontakt</span>
+                <span> {t("GraphDesign.Listitem1")}</span>
               </li>
               <li>
                 <Image
@@ -452,7 +439,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Szybka realizacja</span>
+                <span>{t("GraphDesign.Listitem2")}</span>
               </li>
               <li>
                 <Image
@@ -461,7 +448,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>3 zmiany projektu</span>
+                <span>{t("GraphDesign.Listitem3")}</span>
               </li>
               <li>
                 <Image
@@ -470,7 +457,7 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Niestandardowy design</span>
+                <span>{t("GraphDesign.Listitem4")}</span>
               </li>
               <li>
                 <Image
@@ -479,10 +466,10 @@ export default function Page() {
                   width={CHECKMARK_WIDTH}
                   height={CHECKMARK_WIDTH}
                 ></Image>
-                <span>Staranność wykonania</span>
+                <span>{t("GraphDesign.Listitem5")}</span>
               </li>
             </ul>
-            <PixelLink href="/#kontakt">Wyślij Zapytanie</PixelLink>
+            <PixelLink href="/#kontakt">{t("GraphDesign.Button")}</PixelLink>
           </div>
         </section>
       </main>

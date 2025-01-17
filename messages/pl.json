@@ -1,0 +1,138 @@
+{
+  "Navbar": {
+    "Homepage": "Strona Główna",
+    "Aboutme": "O Mnie",
+    "Pricing": "Cennik",
+    "Contact": "Kontakt"
+  },
+  "Homepage": {
+    "Pointsofinterest": {
+      "Graphtitle": "Grafika Komputerowa",
+      "GraphContent": "Potrzebujesz profesjonalnych materiałów graficznych, które wyróżnią Twoją markę? Skontaktuj się ze mną! Oferuję indywidualne podejście, konkurencyjne ceny i pełne zaangażowanie w Twój projekt",
+      "Sitetitle": "Strony Internetowe",
+      "Sitecontent": "Chcesz mieć stronę internetową, która przyciągnie klientów i wyróżni Twoją firmę? Skontaktuj się ze mną! Tworzę nowoczesne, responsywne strony, dopasowane do Twoich potrzeb.",
+      "Button": "Zobacz Więcej"
+    },
+    "Aboutme": {
+      "Title": "O mnie",
+      "Subtitle": "Cześć, jestem Czarek",
+      "Content": "Jestem webdeveloperem i grafikiem komputerowym z prawdziwą pasją do tego, co robię. Każdy projekt to dla mnie nowe wyzwanie i okazja, by stworzyć coś wyjątkowego. Stale poszerzam swoją wiedzę, aby być na bieżąco z najnowszymi technologiami, które dynamicznie się rozwijają. W swojej pracy wykorzystuję również sztuczną inteligencję, która pozwala mi na jeszcze bardziej efektywne tworzenie innowacyjnych projektów i usprawnienie procesu kreatywnego. Moje wieloletnie doświadczenie sprawia, że potrafię tworzyć rozwiązania, które są zarówno estetyczne, jak i funkcjonalne, a jednocześnie dostosowane do indywidualnych potrzeb każdego klienta."
+    },
+    "Webdesign": {
+      "Title1": "Projektowanie Stron Internetowych",
+      "Content1": "Szukasz idealnej strony internetowej, która w pełni odda charakter Twojej firmy? Zaprojektuję dla Ciebie nowoczesną i funkcjonalną stronę, która nie tylko przyciągnie uwagę, ale także zrealizuje Twoje cele biznesowe. Jako jednoosobowa działalność oferuję Ci coś, czego nie znajdziesz w dużych agencjach: pełne zaangażowanie i indywidualne podejście do każdego projektu.",
+      "Title2": "Dlaczego warto współpracować właśnie ze mną?",
+      "Listitem1": "<strong>Bezpośredni kontakt</strong> - Nie przechodzisz przez pośredników, co oznacza, że każda Twoja sugestia trafia bezpośrednio do mnie. To pozwala na szybszą i bardziej efektywną komunikację.",
+      "Listitem2": " <strong>Indywidualny projekt</strong> - Nie korzystam z gotowych szablonów. Każda strona, którą tworzę, jest unikalna i dopasowana do Twojej wizji oraz potrzeb.",
+      "Listitem3": "<strong>Elastyczność cenowa</strong> - Jako freelancer mogę zaoferować bardziej konkurencyjne ceny w porównaniu do dużych firm, bez utraty jakości. Koszt stworzenia strony typu landing page zaczyna się już od 1000 zł.",
+      "Listitem4": "<strong>Indywidualne podejście do budżetu i technologii</strong> - Masz wybór! Oferuję dwie opcje:",
+      "SubItem1": " <strong>WordPress</strong> - Idealny, jeśli szukasz bardziej budżetowego rozwiązania, które pozwala na łatwe zarządzanie treściami. Ograniczenia personalizacji są mniejsze, ale nadal uzyskasz stronę zaprojektowaną specjalnie dla Ciebie.",
+      "SubItem2": "<strong>Dedykowany projekt</strong> - Jeśli zależy Ci na maksymalnej personalizacji i optymalnej wydajności, to rozwiązanie bez użycia zewnętrznego systemu CMS będzie strzałem w dziesiątkę. Wyższa cena, ale brak jakichkolwiek ograniczeń i jeszcze szybsze działanie strony.",
+      "Title3": "Zaufaj mi i zyskaj idealną stronę",
+      "Content2": "Każdy projekt traktuję z pełnym zaangażowaniem, dbając o to, aby efekt końcowy nie tylko spełniał Twoje oczekiwania, ale je przewyższał. Zaufaj mi, a zyskasz nie tylko piękną stronę, ale także partnera, który będzie wspierał Cię na każdym etapie jej tworzenia.",
+      "Content3": "Skontaktuj się ze mną i przekonaj się, jak łatwo możesz mieć stronę, która pracuje dla Ciebie!",
+      "Buttonprice": "Cennik",
+      "Buttoncontact": "Poproś o Wycenę"
+    },
+    "Latestwebdesigns": {
+      "Title1": "Ostatnie ",
+      "Title2": "Projekty"
+    },
+    "GraphDesign": {
+      "Title1": "Projektowanie Graficzne",
+      "Content1": "Szukasz grafika, który stworzy dla Ciebie wyjątkowy projekt? Trafiłeś w odpowiednie miejsce! Jako doświadczony grafik oferuję szeroki zakres usług, w tym:",
+      "Listitem1": "<strong>materiały reklamowe</strong>, które pomogą ci pryciągnąć klientów do twojego biznesu,",
+      "Listitem2": "<strong>wizytówki</strong>, które pozostawią trwałe wrażenie,",
+      "Listitem3": "<strong>logo firmowe</strong>, które odda unikalny charakter Twojej marki,",
+      "Listitem4": "oraz <strong>plakaty</strong>,  <strong>grafiki na social media</strong>, <strong>projekty opakowań</strong> i wiele więcej",
+      "Content2": "Jako grafik komputerowy oferuję kompleksowe tworzenie identyfikacji wizualnej - od logo, przez paletę kolorów, po spójne materiały promocyjne. Dobrze zaprojektowana identyfikacja wizualna nie tylko buduje rozpoznawalność marki, ale także budzi zaufanie klientów. Dzięki spójnej i estetycznej oprawie graficznej Twoja firma będzie łatwo zapamiętana, a to przełoży się na lepsze wyniki biznesowe. Pozwól, że pomogę Ci stworzyć wizerunek, który będzie działać na Twoją korzyść!",
+      "Title3": "Dlaczego warto wybrać mnie zamiast dużej agencji?",
+      "Listitem5": "<strong>korzystniejsze warunki cenowe</strong> - bez pośredników i zbędnych kosztów, dostajesz wysokiej jakości projekt w uczciwej cenie,",
+      "Listitem6": "<strong>bezpośrednia i płynna komunikacja</strong> - pracując ze mną, masz pełną kontrolę nad projektem i zawsze możesz liczyć na szybki kontakt,",
+      "Listitem7": "<strong>pełne zaangażowanie</strong> - każdy projekt traktuję indywidualnie, wkładając w niego maksimum energii i pasji. Zależy mi, abyś był w pełni zadowolony z efektów naszej współpracy.",
+      "Content3": "W przeciwieństwie do dużych firm, dla których jesteś tylko jednym z wielu klientów, u mnie Twoje potrzeby i satysfakcja są priorytetem!",
+      "Content4": "Skontaktuj się ze mną i wspólnie stwórzmy coś wyjątkowego!",
+      "Buttonprice": "Cennik",
+      "Buttoncontact": "Poproś o Wycenę"
+    },
+    "Latestgraphdesigns": {
+      "Title1": "Ostatnie ",
+      "Title2": "Projekty"
+    },
+    "Technologies": {
+      "Title": "Technologie Jakich Używam"
+    },
+    "Contact": {
+      "Title": "Kontakt",
+      "Placeholdername": "Imię",
+      "Placeholdermessage": "Treść Wiadomości",
+      "Button": "Wyślij"
+    }
+  },
+  "Pricing": {
+    "Title1": "Strony Internetowe",
+    "Landingpage": {
+      "Title": "Landing Page/Wizytówka",
+      "Price": "<p>od</p><strong>950</strong><p>zł</p>",
+      "Content": "Prosta strona internetowa, która pomoże ci zaistnieć w internecie oraz zareklamować oferowane usługi. Idealna do prowadzenia kampani reklamowej w Google lub Facebook",
+      "Listitem1": "Roczna gwarancja",
+      "Listitem2": "Szybki kontakt",
+      "Listitem3": "Do 3 zakładek",
+      "Listitem4": "2 zmiany projektu",
+      "Listitem5": "Slider na zdjęcia",
+      "Listitem6": "Formularz kontaktowy",
+      "Listitem7": "Mapa google",
+      "Listitem8": "Google Analytics",
+      "Listitem9": "Integracja z social media",
+      "Button": "Wyślij Zapytanie"
+    },
+    "Blog": {
+      "Title": "Blog",
+      "Price": "<p>od</p><strong>2450</strong><p>zł</p>",
+      "Content": "Podczas tworzenia bloga skupiam się przede wszystkim na jego intuicyjnej nawigacji oraz na szybkości działania. Dzięki temu czytelnicy zostają na takiej stronie na dłużej i zdecydowanie chętniej na nią wracają",
+      "Listitem1": "Roczna gwarancja",
+      "Listitem2": "Szybki kontakt",
+      "Listitem3": "Do 6 zakładek",
+      "Listitem4": "3 zmiany projektu",
+      "Listitem5": "Czytelny design",
+      "Listitem6": "Slider z artykułami",
+      "Listitem7": "Inteligentne sugestie artykułów",
+      "Listitem8": "Intuicyjność obsługi",
+      "Listitem9": "Formularz kontaktowy",
+      "Listitem10": "Google Analytics",
+      "Button": "Wyślij Zapytanie"
+    },
+    "Ecommerce": {
+      "Title": "Sklep Internetowy",
+      "Price": "<p>od</p><strong>5000</strong><p>zł</p>",
+      "Content": "Sklep Internetowy podobnie jak blog powinien być przede wszystkim szybki oraz prosty w obsłudze. Zmniejszenie ilości kroków niezbędnych do zakupu oraz zwiększenie ich intuicyjności zapewni więcej konwersji",
+      "Listitem1": "Roczna gwarancja",
+      "Listitem2": "Szybki kontakt",
+      "Listitem3": "Nielimitowane zakładki",
+      "Listitem4": "3 zmiany projektu",
+      "Listitem5": "Czytelny design",
+      "Listitem6": "Slider z produktami",
+      "Listitem7": "Inteligentne sugestie produktów",
+      "Listitem8": "Intuicyjność obsługi",
+      "Listitem9": "Rozbudowany formularz kontaktowy",
+      "Listitem10": "Upselling",
+      "Listitem11": "Crosselling",
+      "Listitem12": "Program Lojalnościowy",
+      "Listitem13": "Linki Referencyjne dla Promotorów",
+      "Listitem14": "Google Analytics",
+      "Button": "Wyślij Zapytanie"
+    },
+    "GraphDesign": {
+      "Title": "Logo, Wizytówka, Ulotka, Zaproszenie itd.",
+      "Price": "<p>od</p><strong>450</strong><p>zł</p>",
+      "Content": "W dzisiejszych czasach reklamy są wszechobecne i bez przerwy jesteśmy bombardowani różnymi treściami. Dlatego właśnie staram się, aby moje projekty jak najbardziej wyróżniały się na tle pozostałych oraz przyciągały uwagę",
+      "Listitem1": "Roczna gwarancja",
+      "Listitem2": "Szybki kontakt",
+      "Listitem3": "Szybka realizacja",
+      "Listitem4": "3 zmiany projektu",
+      "Listitem5": "Niestandardowy design",
+      "Listitem6": "Staranność wykonania",
+      "Button": "Wyślij Zapytanie"
+    }
+  }
+}

@@ -2,8 +2,10 @@ import Image from "next/image";
 import styles from "./GraphicalDesign.module.css";
 import PixelBtn from "./utils/PixelLink";
 import MiddleCircuit from "./circuits/MiddleCircuit";
+import { useTranslations } from "next-intl";
 
 export default function GraphicalDesign() {
+  const t = useTranslations("Homepage.GraphDesign");
   return (
     <section className={styles.section} id="graphical-design">
       <div className={`glow ${styles.container}`}>
@@ -23,66 +25,56 @@ export default function GraphicalDesign() {
           width={1000}
           height={1000}
         />
-        <h3>Projektowanie Graficzne</h3>
-        <p>
-          Szukasz grafika, który stworzy dla Ciebie wyjątkowy projekt? Trafiłeś
-          w odpowiednie miejsce! Jako doświadczony grafik oferuję szeroki zakres
-          usług, w tym:
-        </p>
+        <h3>{t("Title1")}</h3>
+        <p>{t("Content1")}</p>
         <ul>
           <li>
-            <strong>materiały reklamowe</strong>, które pomogą ci pryciągnąć
-            klientów do twojego biznesu,
+            {t.rich("Listitem1", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
           <li>
-            <strong>wizytówki</strong>, które pozostawią trwałe wrażenie,
+            {t.rich("Listitem2", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
           <li>
-            <strong>logo firmowe</strong>, które odda unikalny charakter Twojej
-            marki,
+            {t.rich("Listitem3", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
           <li>
-            oraz <strong>plakaty</strong>,{" "}
-            <strong>grafiki na social media</strong>,{" "}
-            <strong>projekty opakowań</strong> i wiele więcej
+            {t.rich("Listitem4", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
         </ul>
-        <p>
-          Jako grafik komputerowy oferuję kompleksowe tworzenie identyfikacji
-          wizualnej - od logo, przez paletę kolorów, po spójne materiały
-          promocyjne. Dobrze zaprojektowana identyfikacja wizualna nie tylko
-          buduje rozpoznawalność marki, ale także budzi zaufanie klientów.
-          Dzięki spójnej i estetycznej oprawie graficznej Twoja firma będzie
-          łatwo zapamiętana, a to przełoży się na lepsze wyniki biznesowe.
-          Pozwól, że pomogę Ci stworzyć wizerunek, który będzie działać na Twoją
-          korzyść!
-        </p>
-        <h3>Dlaczego warto wybrać mnie zamiast dużej agencji?</h3>
+        <p>{t("Content2")}</p>
+        <h3> {t("Title3")}</h3>
         <ul>
           <li>
-            <strong>korzystniejsze warunki cenowe</strong> - bez pośredników i
-            zbędnych kosztów, dostajesz wysokiej jakości projekt w uczciwej
-            cenie,
+            {t.rich("Listitem5", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
           <li>
-            <strong>bezpośrednia i płynna komunikacja</strong> - pracując ze
-            mną, masz pełną kontrolę nad projektem i zawsze możesz liczyć na
-            szybki kontakt,
+            {t.rich("Listitem6", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
           <li>
-            <strong>pełne zaangażowanie</strong> - każdy projekt traktuję
-            indywidualnie, wkładając w niego maksimum energii i pasji. Zależy
-            mi, abyś był w pełni zadowolony z efektów naszej współpracy.
+            {t.rich("Listitem7", {
+              strong: (content) => <strong>{content}</strong>,
+            })}
           </li>
         </ul>
-        <p>
-          W przeciwieństwie do dużych firm, dla których jesteś tylko jednym z
-          wielu klientów, u mnie Twoje potrzeby i satysfakcja są priorytetem!
-        </p>
-        <p>Skontaktuj się ze mną i wspólnie stwórzmy coś wyjątkowego!</p>
+        <p>{t("Content3")}</p>
+        <p> {t("Content4")}</p>
         <div className={styles.button_container}>
-          <PixelBtn href="/cennik/#projekty-graficzne">Cennik</PixelBtn>
-          <PixelBtn href="/#kontakt">Poproś o Wycenę</PixelBtn>
+          <PixelBtn href="/cennik/#projekty-graficzne">
+            {t("Buttonprice")}
+          </PixelBtn>
+          <PixelBtn href="/#kontakt">{t("Buttoncontact")}</PixelBtn>
         </div>
         <Image
           className={styles.paint_can}

@@ -7,8 +7,10 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("Homepage.Contact");
   const {
     register,
     handleSubmit,
@@ -43,7 +45,11 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <div className={styles.input_container}>
           <div className={styles.input_wrapper}>
-            <input {...register("name")} type="text" placeholder="Imię" />
+            <input
+              {...register("name")}
+              type="text"
+              placeholder={t("Placeholdername")}
+            />
             {errors.name && (
               <p className={styles.error}>{errors.name.message}</p>
             )}
@@ -57,7 +63,7 @@ export default function ContactForm() {
         </div>
         <textarea
           {...register("message")}
-          placeholder="Treść wiadomości"
+          placeholder={t("Placeholdermessage")}
         ></textarea>
         {errors.message && (
           <p className={styles.error}>{errors.message.message}</p>
@@ -68,7 +74,7 @@ export default function ContactForm() {
             window.dataLayer?.push({ event: "submitted" });
           }}
         >
-          Wyślij
+          {t("Button")}
         </PixelBtn>
       </form>
       <AnimatePresence>

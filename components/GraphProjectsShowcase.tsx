@@ -6,13 +6,15 @@ import styles from "./GraphProjectsShowcase.module.css";
 import TypeEffect from "./utils/TypeEffect";
 import GraphCard from "./utils/GraphCard";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function WebProjectsShowcase() {
+  const t = useTranslations("Homepage.Latestgraphdesigns");
   return (
     <section className={styles.section}>
       <h2>
-        <TypeEffect>Ostatnie </TypeEffect>
-        <TypeEffect>Projekty</TypeEffect>
+        <TypeEffect>{t("Title1")}</TypeEffect>
+        <TypeEffect>{t("Title2")}</TypeEffect>
       </h2>
       <Swiper
         className={styles.swiper_container}
