@@ -49,6 +49,9 @@ export default function WebProjectsShowcase() {
         <SwiperSlide className={styles.swiper_slide}>
           <WebCard src="/mutarete.png" title="mutarete.pl" />
         </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slide}>
+          <WebCard src="/yamako_website.png" title="yamakoterapie.pl" />
+        </SwiperSlide>
       </Swiper>
     </section>
   );
