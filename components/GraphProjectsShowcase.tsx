@@ -74,6 +74,13 @@ export default function WebProjectsShowcase() {
           />
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slide}>
+          <GraphCard
+            rewSrc="/zaproszenie_awers.png"
+            awSrc="/zaproszenie_rewers.png"
+            alt="projekt zaproszenia na ślub"
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slide}>
           <Image
             className={styles.slide_image}
             src="/Otwieramy-Oczy-HempCapone-Konkurs.png"
