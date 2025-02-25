@@ -25,51 +25,13 @@ export default function GraphicalDesign() {
           width={1000}
           height={1000}
         />
-        <h3>{t("Title1")}</h3>
-        <p>{t("Content1")}</p>
-        <ul>
-          <li>
-            {t.rich("Listitem1", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-          <li>
-            {t.rich("Listitem2", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-          <li>
-            {t.rich("Listitem3", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-          <li>
-            {t.rich("Listitem4", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-        </ul>
-        <p>{t("Content2")}</p>
-        <h3> {t("Title3")}</h3>
-        <ul>
-          <li>
-            {t.rich("Listitem5", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-          <li>
-            {t.rich("Listitem6", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-          <li>
-            {t.rich("Listitem7", {
-              strong: (content) => <strong>{content}</strong>,
-            })}
-          </li>
-        </ul>
-        <p>{t("Content3")}</p>
-        <p> {t("Content4")}</p>
+        {t.rich("content", {
+          h3: (content) => <h3>{content}</h3>,
+          p: (content) => <p>{content}</p>,
+          ul: (content) => <ul>{content}</ul>,
+          li: (content) => <li>{content}</li>,
+          strong: (content) => <strong>{content}</strong>,
+        })}
         <div className={styles.button_container}>
           <PixelBtn href="/cennik/#projekty-graficzne">
             {t("Buttonprice")}

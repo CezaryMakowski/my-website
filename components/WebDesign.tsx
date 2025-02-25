@@ -13,46 +13,14 @@ export default function WebDesign() {
         <MiddleCircuit className={styles.circuit} />
 
         <div className={`glow ${styles.glow_container}`}>
-          <h3>{t("Title1")}</h3>
-          <p>{t("Content1")}</p>
-          <h3> {t("Title2")}</h3>
-          <ol>
-            <li>
-              {t.rich("Listitem1", {
-                strong: (content) => <strong>{content}</strong>,
-              })}
-            </li>
-            <li>
-              {t.rich("Listitem2", {
-                strong: (content) => <strong>{content}</strong>,
-              })}
-            </li>
-            <li>
-              {t.rich("Listitem3", {
-                strong: (content) => <strong>{content}</strong>,
-              })}
-            </li>
-            <li>
-              {t.rich("Listitem4", {
-                strong: (content) => <strong>{content}</strong>,
-              })}
-              <ul>
-                <li>
-                  {t.rich("SubItem1", {
-                    strong: (content) => <strong>{content}</strong>,
-                  })}
-                </li>
-                <li>
-                  {t.rich("SubItem2", {
-                    strong: (content) => <strong>{content}</strong>,
-                  })}
-                </li>
-              </ul>
-            </li>
-          </ol>
-          <h3>{t("Title3")}</h3>
-          <p>{t("Content2")}</p>
-          <p>{t("Content3")}</p>
+          {t.rich("content", {
+            h3: (content) => <h3>{content}</h3>,
+            p: (content) => <p>{content}</p>,
+            ol: (content) => <ol>{content}</ol>,
+            ul: (content) => <ul>{content}</ul>,
+            li: (content) => <li>{content}</li>,
+            strong: (content) => <strong>{content}</strong>,
+          })}
           <div className={styles.button_container}>
             <PixelBtn href="/cennik/#strony-internetowe">
               {" "}
