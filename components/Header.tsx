@@ -1,10 +1,11 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import TypeEffect from "./utils/TypeEffect";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useParams } from "next/navigation";
 
 export default function Header({
   middle,
@@ -13,8 +14,12 @@ export default function Header({
   middle?: boolean;
   darkBg?: boolean;
 }) {
+  const pathname = usePathname();
+  const locale = useLocale();
+  const nextLocale = locale === "en" ? "pl" : "en";
   const t = useTranslations("Navbar");
   const [sidebarVisible, setSidebarVisible] = useState(false);
+
   useEffect(() => {
     function clickHandler() {
       setSidebarVisible(false);
@@ -43,18 +48,26 @@ export default function Header({
         <Link href={"/cennik"}>{t("Pricing")}</Link>
         <Link href={"/#kontakt"}>{t("Contact")}</Link>
       </div>
-      <div
-        className={styles.icon}
-        onClick={(e) => {
-          setSidebarVisible(true);
-          e.stopPropagation();
-        }}
-      >
-        <div className={styles.top}></div>
-        <div className={styles.middle}></div>
-        <div className={styles.bottom}></div>
+      <div className={styles.navIconContainer}>
+        <Link href={pathname} locale={nextLocale}>
+          <TypeEffect>{t("locale")}</TypeEffect>
+        </Link>
+        <div
+          className={styles.icon}
+          onClick={(e) => {
+            setSidebarVisible(true);
+            e.stopPropagation();
+          }}
+        >
+          <div className={styles.top}></div>
+          <div className={styles.middle}></div>
+          <div className={styles.bottom}></div>
+        </div>
       </div>
       <div className={`${styles.nav_container} ${middle && styles.middle}`}>
+        <Link className={styles.locale} href={pathname} locale={nextLocale}>
+          <TypeEffect>{t("locale")}</TypeEffect>
+        </Link>
         <Link href={"/"}>
           <TypeEffect>{t("Homepage")}</TypeEffect>
         </Link>
