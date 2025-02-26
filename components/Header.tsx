@@ -1,11 +1,10 @@
 "use client";
 
-import { Link, usePathname, useRouter } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import TypeEffect from "./utils/TypeEffect";
 import { useTranslations, useLocale } from "next-intl";
-import { useParams } from "next/navigation";
 
 export default function Header({
   middle,
