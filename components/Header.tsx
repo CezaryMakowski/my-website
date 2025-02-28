@@ -44,7 +44,6 @@ export default function Header({
       >
         <Link href={"/"}>{t("Homepage")}</Link>
         <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
-        <Link href={"/cennik"}>{t("Pricing")}</Link>
         <Link href={"/#kontakt"}>{t("Contact")}</Link>
       </div>
       <div className={styles.navIconContainer}>
@@ -72,9 +71,6 @@ export default function Header({
         </Link>
         <Link href={"/#o-mnie"}>
           <TypeEffect>{t("Aboutme")}</TypeEffect>
-        </Link>
-        <Link href={"/cennik"}>
-          <TypeEffect>{t("Pricing")}</TypeEffect>
         </Link>
         <Link href={"/#kontakt"}>
           <TypeEffect>{t("Contact")}</TypeEffect>
