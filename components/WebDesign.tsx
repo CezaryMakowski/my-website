@@ -3,6 +3,7 @@ import PixelBtn from "./utils/PixelLink";
 import Matrix from "./Matrix";
 import MiddleCircuit from "./circuits/MiddleCircuit";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export default function WebDesign() {
   const t = useTranslations("Homepage.Webdesign");
@@ -20,13 +21,19 @@ export default function WebDesign() {
             ul: (content) => <ul>{content}</ul>,
             li: (content) => <li>{content}</li>,
             strong: (content) => <strong>{content}</strong>,
+            hemp: (content) => (
+              <Link href="https://www.hempcapone.com/" target="_blank">
+                {content}
+              </Link>
+            ),
+            fizjo: (content) => (
+              <Link href="https://www.fizjotrenerka.eu" target="_blank">
+                {content}
+              </Link>
+            ),
           })}
           <div className={styles.button_container}>
-            <PixelBtn href="/cennik/#strony-internetowe">
-              {" "}
-              {t("Buttonprice")}
-            </PixelBtn>
-            <PixelBtn href="/#kontakt"> {t("Buttoncontact")}</PixelBtn>
+            <PixelBtn href="/#kontakt">{t("Button")}</PixelBtn>
           </div>
         </div>
       </div>

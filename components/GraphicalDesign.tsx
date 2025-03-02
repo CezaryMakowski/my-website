@@ -33,10 +33,7 @@ export default function GraphicalDesign() {
           strong: (content) => <strong>{content}</strong>,
         })}
         <div className={styles.button_container}>
-          <PixelBtn href="/cennik/#projekty-graficzne">
-            {t("Buttonprice")}
-          </PixelBtn>
-          <PixelBtn href="/#kontakt">{t("Buttoncontact")}</PixelBtn>
+          <PixelBtn href="/#kontakt">{t("Button")}</PixelBtn>
         </div>
         <Image
           className={styles.paint_can}

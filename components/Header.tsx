@@ -42,7 +42,8 @@ export default function Header({
       <div
         className={`${styles.mobile_nav} ${sidebarVisible && styles.visible}`}
       >
-        <Link href={"/"}>{t("Homepage")}</Link>
+        <Link href={"/#graphical-design"}>{t("GraphDesign")}</Link>
+        <Link href={"/#web-design"}>{t("WebDesign")}</Link>
         <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
         <Link href={"/#kontakt"}>{t("Contact")}</Link>
       </div>
@@ -66,8 +67,11 @@ export default function Header({
         <Link className={styles.locale} href={pathname} locale={nextLocale}>
           <TypeEffect>{t("locale")}</TypeEffect>
         </Link>
-        <Link href={"/"}>
-          <TypeEffect>{t("Homepage")}</TypeEffect>
+        <Link href={"/#graphical-design"}>
+          <TypeEffect>{t("GraphDesign")}</TypeEffect>
+        </Link>
+        <Link href={"/#web-design"}>
+          <TypeEffect>{t("WebDesign")}</TypeEffect>
         </Link>
         <Link href={"/#o-mnie"}>
           <TypeEffect>{t("Aboutme")}</TypeEffect>

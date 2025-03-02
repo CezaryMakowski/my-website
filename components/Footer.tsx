@@ -176,7 +176,8 @@ export default function Footer() {
           </div>
         )}
         <div className={styles.nav_container}>
-          <Link href={"/"}>{t("Homepage")}</Link>
+          <Link href={"/#graphical-design"}>{t("GraphDesign")}</Link>
+          <Link href={"/#web-design"}>{t("WebDesign")}</Link>
           <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
           <Link href={"/#kontakt"}>{t("Contact")}</Link>
         </div>

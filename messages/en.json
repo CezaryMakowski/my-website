@@ -4,38 +4,36 @@
     "Homepage": "HomePage",
     "Aboutme": "About Me",
     "Pricing": "Pricing",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "WebDesign": "Web Design",
+    "GraphDesign": "Graphic Design"
   },
   "Homepage": {
     "Pointsofinterest": {
       "Graphtitle": "Graphic Design",
-      "GraphContent": "Do you need professional graphic materials to make your brand stand out? Contact me! I offer a personalized approach, competitive prices, and full dedication to your project",
+      "GraphContent": "As a graphic designer with a passion for creating aesthetic and functional projects, I constantly strive to combine creativity with practical application.",
       "Sitetitle": "Web Design",
-      "Sitecontent": "If you want a website that attracts customers and makes your business stand out. Contact me! I create modern, responsive websites tailored to your needs",
+      "Sitecontent": "As a Front-End Developer, I have a strong foundation in HTML, CSS, TypeScript, React, and Next.js. I create responsive applications, ensuring their optimization and intuitive user interfaces.",
       "Button": "See More"
     },
     "Aboutme": {
       "Title": "About Me",
       "Subtitle": "Hi, I'm Czarek",
-      "Content": "I am a web developer and graphic designer with a true passion for what I do. Every project is a new challenge and an opportunity to create something unique. I continuously expand my knowledge to stay up-to-date with rapidly evolving technologies. I also incorporate artificial intelligence into my work, enabling me to create innovative projects more efficiently and streamline the creative process. With years of experience, I design solutions that are both aesthetic and functional, while being tailored to the individual needs of each client."
+      "Content": "<p>I am a web developer and graphic designer with a true passion for what I do. As a child, I loved mathematics and enjoyed painting. I believe programming is the perfect combination of pure calculation and art, which aligns perfectly with my interests. I continuously expand my knowledge to make my work more efficient and to become an expert in the future.</p><p>For the past 10 years, I have been tutoring mathematics, and for several years, I have been a Team Leader in a moving company. This experience has given me excellent customer service and teamwork skills.</p>"
     },
     "Webdesign": {
-      "content": "<h3>Website Design</h3><p>Are you looking for the perfect website that fully captures the essence of your business? I will design a modern and functional website for you that not only grabs attention but also achieves your business goals. As an independent professional, I offer something you won't find in large agencies: complete dedication and a personalized approach to every project.</p><h3>Why should you choose to work with me?</h3><ol><li><strong>Direct communication</strong> - You do not go through intermediaries, which means that every suggestion you make comes directly to me. This allows for faster and more effective communication.</li><li><strong>Custom design</strong> - I do not use ready-made templates. Every website I create is unique and tailored to your vision and needs.</li><li><strong>fair prices</strong> - As a freelancer, I can offer more competitive prices compared to large companies without compromising on quality. The cost of creating a landing page starts at just $500</li><li><strong>Personalized approach to budget and technology</strong> - You have a choice!<ul><li><strong>WordPress</strong> - Ideal if you are looking for a more budget-friendly solution that allows for easy content management. There are some limitations in customization, but you will still receive a website designed specifically for you.</li><li><strong>Next.js app</strong> - If you prioritize maximum customization and optimal performance, this solution without using an external CMS will be a perfect fit. It comes at a higher price, but there are no limitations, and the website will operate even faster.</li></ul></li></ol><h3>Trust me and gain your perfect website</h3><p>I approach every project with complete dedication, ensuring that the final result not only meets your expectations but exceeds them. Trust me, and you will gain not only a beautiful website but also a partner who will support you at every stage of its creation.</p><p>Contact me and see how easily you can have a website that works for you!</p>",
-      "Buttonprice": "Pricing",
-      "Buttoncontact": "Request a Quote"
+      "content": "<h3>Website Design</h3><p>I designed my first website for my own needs when I was launching my online store, <hemp>hempcapone.com</hemp>. Since then, I have become deeply interested in application development and have been expanding my knowledge ever since.</p><p>Initially, I started learning WordPress. However, over time, its limitations began to bother me more and more, such as:</p><ul><li>slow loading times,</li><li>expensive plugins,</li><li>limited styling options,</li><li>debugging difficulties.</li></ul><p>What frustrated me the most was the lack of full control—I couldn't create exactly what I wanted and had to work within the constraints of available plugins.</p><p>I decided to develop my skills in React, TypeScript, and Next.js to gain complete freedom in building applications and to work with significantly better technologies. So far, I have built nine websites, including three using Next.js—one of them being an online store, <fizjo>fizjotrenerka.eu</fizjo>.</p><p>I now have great flexibility in using these technologies and continuously expand my knowledge to stay up to date with the ever-evolving tech landscape. Currently, I am learning Angular to broaden my expertise beyond a single framework and Node.js to eventually be able to handle backend development as well.</p><p>I also incorporate artificial intelligence into my workflow, as I believe it is an essential tool for increasing efficiency and speeding up development.</p>",
+      "Button": "Contact"
     },
     "Latestwebdesigns": {
-      "Title1": "Latest ",
-      "Title2": "Designs"
+      "Title": "Latest Designs"
     },
     "GraphDesign": {
-      "content": "<h3>Graphic Design</h3><p>Are you looking for a designer to create a unique project for you? You've come to the right place! As an experienced graphic designer, I offer a wide range of services, including:</p><ul><li><strong>Advertising materials</strong>, that will help you attract customers to your business,</li><li><strong>Business cards</strong>, that will leave a lasting impression,</li><li><strong>Corporate logo</strong>, that will capture the unique character of your brand,</li><li>and also <strong>posters</strong>,  <strong>arts for social media</strong>, <strong>Packaging designs</strong> and much more</li></ul><p>As a graphic designer, I offer comprehensive visual identity creation—ranging from logos and color palettes to cohesive promotional materials. Well-designed visual identity not only builds brand recognition but also fosters customer trust. With consistent and aesthetically pleasing graphic design, your company will be easily remembered, which will translate into better business results. Let me help you create an image that works to your advantage!</p><h3>Why should you choose me instead of a large agency?</h3><ul><li><strong>More favorable pricing conditions</strong> - Without intermediaries and unnecessary costs, you receive a high-quality design at a fair price,</li><li><strong>Direct and fast communication</strong> - When you work with me, you have full control over the project and can always count on quick communication,</li><li><strong>Full commitment</strong> - I treat each project individually, putting in maximum energy and passion. I want you to be fully satisfied with the results of our collaboration.</li></ul><p>Unlike large companies, where you may be just one of many clients, your needs and satisfaction are my top priority!</p><p>Contact me, and together let's create something extraordinary!</p>",
-      "Buttonprice": "Pricing",
-      "Buttoncontact": "Request a Quote"
+      "content": "<h3>Graphic Design</h3><p>I have been passionate about graphic design for as long as I can remember. During my studies, I started working with digital graphics, taking on small projects such as business cards and flyers for people in my network.</p><p>While managing my online store and its social media, I gained the most experience in creating <strong>sales-oriented graphics.</strong> That's when I realized the importance of elements like brand identity and the necessity of well-placed <strong>call-to-action (CTA) buttons</strong> to drive engagement and conversions.</p><p><strong>Tools I Use:</strong></p><ul><li>Procreate</li><li>Figma</li><li>Canva</li></ul><p>Currently, my focus is on web design, and I am expanding my knowledge in this field. Internet users lose interest quickly, and capturing their attention is a challenge. That's why a well-structured visual layout in a web application is crucial—content should spark curiosity without overwhelming users with excessive stimuli.</p>",
+      "Button": "Contact"
     },
     "Latestgraphdesigns": {
-      "Title1": "Latest ",
-      "Title2": "Designs"
+      "Title": "Latest Designs"
     },
     "Technologies": {
       "Title": "Technologies I Use"

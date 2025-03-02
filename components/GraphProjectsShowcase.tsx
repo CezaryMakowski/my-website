@@ -13,8 +13,7 @@ export default function WebProjectsShowcase() {
   return (
     <section className={styles.section}>
       <h2>
-        <TypeEffect>{t("Title1")}</TypeEffect>
-        <TypeEffect>{t("Title2")}</TypeEffect>
+        <TypeEffect>{t("Title")}</TypeEffect>
       </h2>
       <Swiper
         className={styles.swiper_container}

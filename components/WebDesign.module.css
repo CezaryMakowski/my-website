@@ -29,11 +29,17 @@
   font-size: 1.4rem;
   margin-bottom: 20px;
   padding-left: 20px;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .section ol li:not(:last-child),
 .section ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.section a {
+  color: var(--primary);
 }
 
 .circuit {

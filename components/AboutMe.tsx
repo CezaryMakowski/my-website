@@ -14,7 +14,12 @@ export default function AboutMe() {
         <CezaryImg />
         <div className={`glow ${styles.glow_container}`}>
           <h3>{t("Subtitle")}</h3>
-          <p>{t("Content")}</p>
+          <p>
+            {t.rich("Content", {
+              p: (content) => <p>{content}</p>,
+              strong: (content) => <strong>{content}</strong>,
+            })}
+          </p>
         </div>
       </div>
     </section>

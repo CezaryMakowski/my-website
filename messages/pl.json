@@ -4,40 +4,38 @@
     "Homepage": "Strona Główna",
     "Aboutme": "O Mnie",
     "Pricing": "Cennik",
-    "Contact": "Kontakt"
+    "Contact": "Kontakt",
+    "WebDesign": "WebDev",
+    "GraphDesign": "Grafika Komputerowa"
   },
   "Homepage": {
     "Pointsofinterest": {
       "Graphtitle": "Grafika Komputerowa",
-      "GraphContent": "Potrzebujesz profesjonalnych materiałów graficznych, które wyróżnią Twoją markę? Skontaktuj się ze mną! Oferuję indywidualne podejście, konkurencyjne ceny i pełne zaangażowanie w Twój projekt",
+      "GraphContent": "Jako grafik komputerowy z pasją do tworzenia estetycznych i funkcjonalnych projektów, nieustannie dążę do łączenia kreatywności z praktycznym zastosowaniem.",
       "Sitetitle": "Strony Internetowe",
-      "Sitecontent": "Chcesz mieć stronę internetową, która przyciągnie klientów i wyróżni Twoją firmę? Skontaktuj się ze mną! Tworzę nowoczesne, responsywne strony, dopasowane do Twoich potrzeb.",
+      "Sitecontent": "Jako Front-End Developer posiadam solidne podstawy w HTML, CSS, TypeScript, React, oraz Next.js. Tworzę responsywne aplikcje, dbając o ich optymalizację oraz intuicyjność UI.",
       "Button": "Zobacz Więcej"
     },
     "Aboutme": {
       "Title": "O mnie",
       "Subtitle": "Cześć, jestem Czarek",
-      "Content": "Jestem webdeveloperem i grafikiem komputerowym z prawdziwą pasją do tego, co robię. Każdy projekt to dla mnie nowe wyzwanie i okazja, by stworzyć coś wyjątkowego. Stale poszerzam swoją wiedzę, aby być na bieżąco z najnowszymi technologiami, które dynamicznie się rozwijają. W swojej pracy wykorzystuję również sztuczną inteligencję, która pozwala mi na jeszcze bardziej efektywne tworzenie innowacyjnych projektów i usprawnienie procesu kreatywnego. Moje wieloletnie doświadczenie sprawia, że potrafię tworzyć rozwiązania, które są zarówno estetyczne, jak i funkcjonalne, a jednocześnie dostosowane do indywidualnych potrzeb każdego klienta."
+      "Content": "<p>Jestem webdeveloperem i grafikiem komputerowym z prawdziwą pasją do tego, co robię. Jako dziecko bardzo lubiłem matematykę oraz uwielbiałem malować obrazy. Myślę, że programowanie stanowi idealne połączenie między czystą kalkulacją oraz sztuką, co wiąże się z moimi zainteresowaniami. Stale poszerzam swoją wiedzę tak, aby moja praca była coraz bardziej efektywna, oraz abym mógł w przyszłości być ekspertem.</p><p>Od 10 lat zajmuję się udzielaniem korepetycji z matematyki oraz od kilku lat jestem TeamLeaderem w firmie przeprowadzkowej. Sprawia to, że Posiadam bardzo dobre umiejętności pracy z klientem oraz pracy zespołowej.</p>"
     },
 
     "Webdesign": {
-      "content": "<h3>Projektowanie Stron Internetowych</h3><p>Szukasz idealnej strony internetowej, która w pełni odda charakter Twojej firmy? Zaprojektuję dla Ciebie nowoczesną i funkcjonalną stronę, która nie tylko przyciągnie uwagę, ale także zrealizuje Twoje cele biznesowe. Jako jednoosobowa działalność oferuję Ci coś, czego nie znajdziesz w dużych agencjach: pełne zaangażowanie i indywidualne podejście do każdego projektu.</p><h3>Dlaczego warto współpracować właśnie ze mną?</h3><ol><li><strong>Bezpośredni kontakt</strong> - Nie przechodzisz przez pośredników, co oznacza, że każda Twoja sugestia trafia bezpośrednio do mnie. To pozwala na szybszą i bardziej efektywną komunikację.</li><li><strong>Indywidualny projekt</strong> - Nie korzystam z gotowych szablonów. Każda strona, którą tworzę, jest unikalna i dopasowana do Twojej wizji oraz potrzeb.</li><li><strong>Elastyczność cenowa</strong> - Jako freelancer mogę zaoferować bardziej konkurencyjne ceny w porównaniu do dużych firm, bez utraty jakości. Koszt stworzenia strony typu landing page zaczyna się już od 1000 zł.</li><li><strong>Indywidualne podejście do budżetu i technologii</strong> - Masz wybór! Oferuję dwie opcje:<ul><li><strong>WordPress</strong> - Idealny, jeśli szukasz bardziej budżetowego rozwiązania, które pozwala na łatwe zarządzanie treściami. Ograniczenia personalizacji są mniejsze, ale nadal uzyskasz stronę zaprojektowaną specjalnie dla Ciebie.</li><li><strong>Dedykowany projekt</strong> - Jeśli zależy Ci na maksymalnej personalizacji i optymalnej wydajności, to rozwiązanie bez użycia zewnętrznego systemu CMS będzie strzałem w dziesiątkę. Wyższa cena, ale brak jakichkolwiek ograniczeń i jeszcze szybsze działanie strony.</li></ul></li></ol><h3>Zaufaj mi i zyskaj idealną stronę</h3><p>Każdy projekt traktuję z pełnym zaangażowaniem, dbając o to, aby efekt końcowy nie tylko spełniał Twoje oczekiwania, ale je przewyższał. Zaufaj mi, a zyskasz nie tylko piękną stronę, ale także partnera, który będzie wspierał Cię na każdym etapie jej tworzenia.</p><p>Skontaktuj się ze mną i przekonaj się, jak łatwo możesz mieć stronę, która pracuje dla Ciebie!</p>",
-      "Buttonprice": "Cennik",
-      "Buttoncontact": "Poproś o Wycenę"
+      "content": "<h3>Projektowanie Stron Internetowych</h3><p>Swoją pierwszą stronę internetową zaprojektowałem na własne potrzeby, kiedy otwierałem swój sklep internetowy, <hemp>hempcapone.com</hemp>. Od tamtego czasu bardzo zaciekawił mnie temat tworzenia aplikacji i zacząłem poszerzać swoją wiedzę.</p><p>Początkowo uczyłem się obsługi Wordpressa. Po czasie zaczęły mi coraz bardziej przeszkadzać jego ograniczenia np.:</p><ul><li>długi czas wczytywania</li><li>kosztowne wtyczki</li><li>braki w stylizowaniu</li><li>problemy z debugowaniem</li></ul><p>Najbardziej jednak przeszkadzał mi fakt, że nie jestem w stanie zrobić dokładnie tego, co chcę, tylko muszę działać w ramach funkcjonalności danej wtyczki.</p><p>Zacząłem rozwijać się w REACT, TypeScript oraz Next.js. Chciałem mieć pełnię możliwości w tworzeniu moich aplikacji oraz pracować z wykorzystaniem zdecydowanie lepszych technologii. Stworzyłem już 9 stron internetowych z czego 3 za pomocą Next.js w tym jeden sklep internetowy, <fizjo>fizjotrenerka.eu</fizjo>.</p><p>Posiadam dużą swobodę w korzystaniu z tych rozwiązań i cały czas poszerzam swoją wiedzę, by być na bieżąco z rozwijającą się technologią. Obecnie uczę się Angular, żeby nie zamykać się tylko w obrębie jednego framework'a oraz node.js, aby w przyszłości być w stanie obsłużyć również backend.</p><p>Do swojej pracy wykorzystuję sztuczną inteligencję. Uważam, że to narzędzie jest absolutnie niezbędne w celu przyspieszenia swojej efektywności.</p>",
+      "Button": "Kontakt"
     },
 
     "Latestwebdesigns": {
-      "Title1": "Ostatnie ",
-      "Title2": "Projekty"
+      "Title": "Ostatnie Projekty"
     },
     "GraphDesign": {
-      "content": "<h3>Projektowanie Graficzne</h3><p>Szukasz grafika, który stworzy dla Ciebie wyjątkowy projekt? Trafiłeś w odpowiednie miejsce! Jako doświadczony grafik oferuję szeroki zakres usług, w tym:</p><ul><li><strong>materiały reklamowe</strong>, które pomogą ci pryciągnąć klientów do twojego biznesu,</li><li><strong>wizytówki</strong>, które pozostawią trwałe wrażenie,</li><li><strong>logo firmowe</strong>, które odda unikalny charakter Twojej marki,</li><li>oraz <strong>plakaty</strong>,  <strong>grafiki na social media</strong>, <strong>projekty opakowań</strong> i wiele więcej</li></ul><p>Jako grafik komputerowy oferuję kompleksowe tworzenie identyfikacji wizualnej - od logo, przez paletę kolorów, po spójne materiały promocyjne. Dobrze zaprojektowana identyfikacja wizualna nie tylko buduje rozpoznawalność marki, ale także budzi zaufanie klientów. Dzięki spójnej i estetycznej oprawie graficznej Twoja firma będzie łatwo zapamiętana, a to przełoży się na lepsze wyniki biznesowe. Pozwól, że pomogę Ci stworzyć wizerunek, który będzie działać na Twoją korzyść!</p><h3>Dlaczego warto wybrać mnie zamiast dużej agencji?</h3><ul><li><strong>korzystniejsze warunki cenowe</strong> - bez pośredników i zbędnych kosztów, dostajesz wysokiej jakości projekt w uczciwej cenie,</li><li><strong>bezpośrednia i płynna komunikacja</strong> - pracując ze mną, masz pełną kontrolę nad projektem i zawsze możesz liczyć na szybki kontakt,</li><li><strong>pełne zaangażowanie</strong> - każdy projekt traktuję indywidualnie, wkładając w niego maksimum energii i pasji. Zależy mi, abyś był w pełni zadowolony z efektów naszej współpracy.</li></ul><p>W przeciwieństwie do dużych firm, gdzie możesz być tylko jednym z wielu klientów, Twoje potrzeby i satysfakcja są moim priorytetem!</p><p>Skontaktuj się ze mną i wspólnie stwórzmy coś wyjątkowego!</p>",
-      "Buttonprice": "Cennik",
-      "Buttoncontact": "Poproś o Wycenę"
+      "content": "<h3>Projektowanie Graficzne</h3><p>Grafiką pasjonuję się odkąd tylko pamiętam. W trakcie studiów zacząłem zajmować się grafiką komputerową. Realizowałem małe projekty tj. wizytówki czy ulotki dla osób z mojego otoczenia.</p><p>W trakcie prowadzenia sklepu internetowego oraz jego mediów społecznościowych zdobyłem najwięcej wiedzy związanej z tworzeniem grafik sprzedażowych. Zrozumiałem wtedy wagę implementacji rzeczy takich jak identyfikacja graficzna oraz konieczność stosowania odpowiednio oznaczonych CTA. </p><p>Do swojej pracy używam następujących programów:</p><ul><li>Procreate</li><li>Figma</li><li>Canva</li></ul><p>Moja uwaga obecnie zwrócona jest w stronę projektowania stron internetowych. Pod tym kątem obecnie poszerzam swoją wiedzę . Użytkownicy internetu bardzo szybko tracą zainteresowanie oraz ciężko jest pozyskać ich uwagę. Dlatego bardzo istotny jest odpowiedni rozkład graficzny w aplikacji internetowej tak, aby treści wzbudzały ciekawość bez niepotrzebnego przebodźcowania.</p>",
+      "Button": "Kontakt"
     },
     "Latestgraphdesigns": {
-      "Title1": "Ostatnie ",
-      "Title2": "Projekty"
+      "Title": "Ostatnie Projekty"
     },
     "Technologies": {
       "Title": "Technologie Jakich Używam"

@@ -12,13 +12,10 @@ import { useTranslations } from "next-intl";
 export default function Technologies() {
   const t = useTranslations("Homepage.Technologies");
 
-  const title = t("Title").split(" ");
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>
-        <TypeEffect>{title[0] + " "}</TypeEffect>
-        <TypeEffect>{title[1] + " "} </TypeEffect>
-        <TypeEffect>{title[2]}</TypeEffect>
+        <TypeEffect>{t("Title")}</TypeEffect>
       </h2>
       <Swiper
         className={styles.swiper}
@@ -56,6 +53,18 @@ export default function Technologies() {
               height={100}
             />
             <p className={styles.subtitle}>Figma</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div>
+            <Image
+              className={styles.icon}
+              src={"/icons/git.svg"}
+              alt="git-icon"
+              width={100}
+              height={100}
+            />
+            <p className={styles.subtitle}>GIT</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
