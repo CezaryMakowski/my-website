@@ -14,7 +14,7 @@ type itemsProps = {
   href: string;
 };
 
-export default function () {
+export default function FrontSlider() {
   const [itemNumber, setItemNumber] = useState(0);
   const isHovered = useRef(false);
   const t = useTranslations("Homepage.Frontslider");
@@ -36,7 +36,7 @@ export default function () {
     }, 7000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   const items: itemsProps[] = t.raw("Slider");
 

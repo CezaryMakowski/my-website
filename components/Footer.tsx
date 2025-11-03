@@ -4,12 +4,10 @@ import { Link } from "@/i18n/routing";
 import styles from "./Footer.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { useNav } from "@/lib/useNav";
 import TypeEffect from "./utils/TypeEffect";
 
 export default function Footer() {
-  const t = useTranslations("Navbar");
   const pixelSize = 10;
   const [pixelNumber, setPixelNumber] = useState<number | null>(null);
   const [isClient, setIsClient] = useState(false);
