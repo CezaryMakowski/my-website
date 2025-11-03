@@ -3,12 +3,13 @@ import styles from "./GraphicalDesign.module.css";
 import PixelBtn from "./utils/PixelLink";
 import MiddleCircuit from "./circuits/MiddleCircuit";
 import { useTranslations } from "next-intl";
+import WindowXP from "./utils/WindowXP";
 
 export default function GraphicalDesign() {
   const t = useTranslations("Homepage.GraphDesign");
   return (
     <section className={styles.section} id="graphical-design">
-      <div className={`glow ${styles.container}`}>
+      <WindowXP className={styles.container}>
         <MiddleCircuit className={styles.circuit} />
 
         <Image
@@ -33,7 +34,8 @@ export default function GraphicalDesign() {
           strong: (content) => <strong>{content}</strong>,
         })}
         <div className={styles.button_container}>
-          <PixelBtn href="/#kontakt">{t("Button")}</PixelBtn>
+          {/* <PixelBtn href="/cennik">{t("Buttonprice")}</PixelBtn> */}
+          <PixelBtn href="/#kontakt">{t("Buttoncontact")}</PixelBtn>
         </div>
         <Image
           className={styles.paint_can}
@@ -49,7 +51,7 @@ export default function GraphicalDesign() {
           width={500}
           height={500}
         />
-      </div>
+      </WindowXP>
     </section>
   );
 }

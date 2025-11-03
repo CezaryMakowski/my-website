@@ -19,6 +19,7 @@ main {
   margin: auto;
   box-shadow: 40px 0 50px -65px var(--main), -40px 0 50px -65px var(--main);
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 html,
@@ -63,16 +64,4 @@ p {
   font-family: var(--vt323);
   font-size: 1.5rem;
   color: var(--background);
-}
-
-.glow {
-  text-align: center;
-  position: relative;
-  padding: 20px 25px;
-  background: var(--main);
-  border-radius: 25px;
-  box-shadow: 0 0 40px var(--main);
-  p:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }

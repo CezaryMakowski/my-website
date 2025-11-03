@@ -4,6 +4,7 @@ import Matrix from "./Matrix";
 import MiddleCircuit from "./circuits/MiddleCircuit";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import WindowXP from "./utils/WindowXP";
 
 export default function WebDesign() {
   const t = useTranslations("Homepage.Webdesign");
@@ -12,8 +13,7 @@ export default function WebDesign() {
       <Matrix />
       <div className={styles.container}>
         <MiddleCircuit className={styles.circuit} />
-
-        <div className={`glow ${styles.glow_container}`}>
+        <WindowXP className={styles.glow_container}>
           {t.rich("content", {
             h3: (content) => <h3>{content}</h3>,
             p: (content) => <p>{content}</p>,
@@ -33,9 +33,10 @@ export default function WebDesign() {
             ),
           })}
           <div className={styles.button_container}>
-            <PixelBtn href="/#kontakt">{t("Button")}</PixelBtn>
+            {/* <PixelBtn href="/cennik">{t("Buttonprice")}</PixelBtn> */}
+            <PixelBtn href="/#kontakt">{t("Buttoncontact")}</PixelBtn>
           </div>
-        </div>
+        </WindowXP>
       </div>
     </section>
   );

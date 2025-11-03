@@ -18,7 +18,7 @@ export default function TypeEffect({ children }: { children: string }) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.01, delay: 0.1 * i }}
-            key={i}
+            key={Math.random()}
           >
             {letter}
           </motion.span>

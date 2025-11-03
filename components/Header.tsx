@@ -5,14 +5,9 @@ import styles from "./Header.module.css";
 import { useEffect, useState } from "react";
 import TypeEffect from "./utils/TypeEffect";
 import { useTranslations, useLocale } from "next-intl";
+import { useNav } from "@/lib/useNav";
 
-export default function Header({
-  middle,
-  darkBg,
-}: {
-  middle?: boolean;
-  darkBg?: boolean;
-}) {
+export default function Header() {
   const pathname = usePathname();
   const locale = useLocale();
   const nextLocale = locale === "en" ? "pl" : "en";
@@ -30,7 +25,7 @@ export default function Header({
   }, []);
 
   return (
-    <section className={`${styles.section} ${darkBg && styles.dark}`}>
+    <section className={styles.section}>
       <div
         onClick={(e) => {
           e.stopPropagation();
@@ -42,10 +37,11 @@ export default function Header({
       <div
         className={`${styles.mobile_nav} ${sidebarVisible && styles.visible}`}
       >
-        <Link href={"/#graphical-design"}>{t("GraphDesign")}</Link>
-        <Link href={"/#web-design"}>{t("WebDesign")}</Link>
-        <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
-        <Link href={"/#kontakt"}>{t("Contact")}</Link>
+        {useNav().map((item) => (
+          <Link href={item.href} key={item.title}>
+            {item.title}
+          </Link>
+        ))}
       </div>
       <div className={styles.navIconContainer}>
         <Link href={pathname} locale={nextLocale}>
@@ -63,22 +59,15 @@ export default function Header({
           <div className={styles.bottom}></div>
         </div>
       </div>
-      <div className={`${styles.nav_container} ${middle && styles.middle}`}>
+      <div className={styles.nav_container}>
         <Link className={styles.locale} href={pathname} locale={nextLocale}>
           <TypeEffect>{t("locale")}</TypeEffect>
         </Link>
-        <Link href={"/#graphical-design"}>
-          <TypeEffect>{t("GraphDesign")}</TypeEffect>
-        </Link>
-        <Link href={"/#web-design"}>
-          <TypeEffect>{t("WebDesign")}</TypeEffect>
-        </Link>
-        <Link href={"/#o-mnie"}>
-          <TypeEffect>{t("Aboutme")}</TypeEffect>
-        </Link>
-        <Link href={"/#kontakt"}>
-          <TypeEffect>{t("Contact")}</TypeEffect>
-        </Link>
+        {useNav().map((item) => (
+          <Link href={item.href} key={item.title}>
+            <TypeEffect>{item.title}</TypeEffect>
+          </Link>
+        ))}
       </div>
     </section>
   );

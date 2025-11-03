@@ -5,10 +5,12 @@ import styles from "./Footer.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useNav } from "@/lib/useNav";
+import TypeEffect from "./utils/TypeEffect";
 
 export default function Footer() {
   const t = useTranslations("Navbar");
-  const pixelSize = 15;
+  const pixelSize = 10;
   const [pixelNumber, setPixelNumber] = useState<number | null>(null);
   const [isClient, setIsClient] = useState(false);
 
@@ -176,10 +178,11 @@ export default function Footer() {
           </div>
         )}
         <div className={styles.nav_container}>
-          <Link href={"/#graphical-design"}>{t("GraphDesign")}</Link>
-          <Link href={"/#web-design"}>{t("WebDesign")}</Link>
-          <Link href={"/#o-mnie"}>{t("Aboutme")}</Link>
-          <Link href={"/#kontakt"}>{t("Contact")}</Link>
+          {useNav().map((item) => (
+            <Link href={item.href} key={item.title}>
+              <TypeEffect>{item.title}</TypeEffect>
+            </Link>
+          ))}
         </div>
       </div>
     </footer>

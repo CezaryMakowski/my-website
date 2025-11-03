@@ -1,24 +1,16 @@
 .section {
-  background-color: #021133;
-  padding-inline: 40px;
-  padding-top: 50px;
+  background-color: var(--background);
+  padding-inline: 1rem;
+  padding-top: 3rem;
   max-width: 1700px;
   margin: auto;
 }
 
-.section.dark {
-  background-color: var(--background);
-}
-
 .nav_container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 35px;
-}
-
-.nav_container.middle {
-  justify-content: center;
 }
 
 .locale {
@@ -34,7 +26,7 @@
   color: var(--main);
   font-family: var(--vt323);
   text-shadow: 0 0 15px var(--main), 0 0 10px var(--main);
-  font-size: 2rem;
+  font-size: 1.7rem;
   transition: all 0.1s;
 }
 
@@ -143,19 +135,25 @@
 }
 
 .mobile_nav.visible a:nth-child(1) {
-  transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.1s;
 }
 .mobile_nav.visible a:nth-child(2) {
-  transition: all 0.3s 0.3s;
+  transition: all 0.3s 0.15s;
 }
 .mobile_nav.visible a:nth-child(3) {
-  transition: all 0.3s 0.4s;
+  transition: all 0.3s 0.2s;
 }
 .mobile_nav.visible a:nth-child(4) {
-  transition: all 0.3s 0.5s;
+  transition: all 0.3s 0.25s;
+}
+.mobile_nav.visible a:nth-child(5) {
+  transition: all 0.3s 0.3s;
+}
+.mobile_nav.visible a:nth-child(6) {
+  transition: all 0.3s 0.35s;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1150px) {
   .section {
     padding-inline: 20px;
     padding-top: 20px;

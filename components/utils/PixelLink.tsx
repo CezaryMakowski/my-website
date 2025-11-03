@@ -9,7 +9,7 @@ interface pixelBtnProps extends LinkProps {
   locale?: string | undefined;
 }
 
-export default function PixelBtn({ children, href, ...props }: pixelBtnProps) {
+export default function PixelLink({ children, href, ...props }: pixelBtnProps) {
   return (
     <Link className={styles.pixel_btn} href={href} {...props}>
       <Image
@@ -40,7 +40,7 @@ export default function PixelBtn({ children, href, ...props }: pixelBtnProps) {
         width={150}
         height={200}
       />
-      <p className={styles.text}>{children}</p>
+      <span className={styles.text}>{children}</span>
     </Link>
   );
 }

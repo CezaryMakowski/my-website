@@ -3,36 +3,73 @@
     "locale": "ENG",
     "Homepage": "Strona Główna",
     "Aboutme": "O Mnie",
-    "Pricing": "Cennik",
     "Contact": "Kontakt",
     "WebDesign": "WebDev",
-    "GraphDesign": "Grafika Komputerowa"
+    "GraphDesign": "Grafika Komputerowa",
+    "Automation": "Automatyzacje AI"
   },
   "Homepage": {
+    "Frontslider": {
+      "Slider": [
+        {
+          "href": "#web-design",
+          "title": "Strona wizytówka za 1500 zł",
+          "content": "Pełny projekt dopasowany dla wszystkich urządzeń. Oferta ograniczona czasowo, więc Jeśli Twoja firma wciąż nie ma własnej strony, teraz możesz to zmienić — szybko, prosto i bez zbędnych kosztów."
+        },
+        {
+          "href": "#web-design",
+          "title": "Darmowy projekt graficzny",
+          "content": "Bo wygląd też ma znaczenie. Zaprojektuję Twoją stronę tak, żeby była nie tylko funkcjonalna, ale też po prostu ładna. Jeśli nie trafiam w gust — nie płacisz nic."
+        },
+        {
+          "href": "#automatyzacje",
+          "title": "Automatyzacje z AI",
+          "content": "Niech część obowiązków zrobi się sama. Pomogę Ci wdrożyć inteligentne automatyzacje, które oszczędzą czas i uporządkują chaos. To proste rozwiązania, które np. wysyłają spersonalizowane maile, obsługują media społecznościowe czy tworzą raporty — wszystko bez Twojego udziału."
+        },
+        {
+          "href": "#web-design",
+          "title": "Tanie utrzymanie strony",
+          "content": "Zapomnij o miesięcznych opłatach i abonamentach. Moje strony kosztują Cię tylko tyle, co domena — około 200 zł rocznie."
+        },
+        {
+          "href": "#web-design",
+          "title": "Z pasji do logiki i sztuki",
+          "content": "Matematyka spotyka sztukę. Łączę techniczną precyzję programisty z artystycznym okiem grafika. Dzięki temu każda moja strona ma charakter."
+        }
+      ],
+      "Button": "Zobacz Więcej"
+    },
     "Pointsofinterest": {
       "Graphtitle": "Grafika Komputerowa",
-      "GraphContent": "Jako grafik komputerowy z pasją do tworzenia estetycznych i funkcjonalnych projektów, nieustannie dążę do łączenia kreatywności z praktycznym zastosowaniem.",
+      "GraphContent": "Potrzebujesz profesjonalnych materiałów graficznych, które wyróżnią Twoją markę? Skontaktuj się ze mną! Oferuję indywidualne podejście, konkurencyjne ceny i pełne zaangażowanie w Twój projekt",
       "Sitetitle": "Strony Internetowe",
-      "Sitecontent": "Jako Front-End Developer posiadam solidne podstawy w HTML, CSS, TypeScript, React, oraz Next.js. Tworzę responsywne aplikcje, dbając o ich optymalizację oraz intuicyjność UI.",
+      "Sitecontent": "Chcesz mieć stronę internetową, która przyciągnie klientów i wyróżni Twoją firmę? Skontaktuj się ze mną! Tworzę nowoczesne, responsywne strony, dopasowane do Twoich potrzeb.",
       "Button": "Zobacz Więcej"
     },
     "Aboutme": {
       "Title": "O mnie",
       "Subtitle": "Cześć, jestem Czarek",
-      "Content": "<p>Jestem webdeveloperem i grafikiem komputerowym z prawdziwą pasją do tego, co robię. Jako dziecko bardzo lubiłem matematykę oraz uwielbiałem malować obrazy. Myślę, że programowanie stanowi idealne połączenie między czystą kalkulacją oraz sztuką, co wiąże się z moimi zainteresowaniami. Stale poszerzam swoją wiedzę tak, aby moja praca była coraz bardziej efektywna, oraz abym mógł w przyszłości być ekspertem.</p><p>Od 10 lat zajmuję się udzielaniem korepetycji z matematyki oraz od kilku lat jestem TeamLeaderem w firmie przeprowadzkowej. Sprawia to, że Posiadam bardzo dobre umiejętności pracy z klientem oraz pracy zespołowej.</p>"
+      "Content": "<p>Jestem programistą i grafikiem, który naprawdę lubi to, co robi.</p><p>Od zawsze ciągnęło mnie zarówno do logiki, jak i do sztuki. Tworzenie stron i aplikacji to dla mnie właśnie połączenie tych dwóch pasji.</p><p>Od 4 lat pomagam małym firmom zaistnieć w sieci — tworzę proste, skuteczne strony wizytówki, projektuję grafiki i wdrażam automatyzacje z wykorzystaniem AI. Nie pracuję jak agencja — stawiam na kontakt człowiek z człowiekiem, indywidualne podejście i uczciwe zasady.</p><p>Jeśli dopiero zaczynasz swoją przygodę ze stroną internetową — jesteś w dobrym miejscu. Pomogę Ci przejść przez cały proces bez stresu i technicznego żargonu.</p>"
     },
 
     "Webdesign": {
-      "content": "<h3>Projektowanie Stron Internetowych</h3><p>Swoją pierwszą stronę internetową zaprojektowałem na własne potrzeby, kiedy otwierałem swój sklep internetowy, <hemp>hempcapone.com</hemp>. Od tamtego czasu bardzo zaciekawił mnie temat tworzenia aplikacji i zacząłem poszerzać swoją wiedzę.</p><p>Początkowo uczyłem się obsługi Wordpressa. Po czasie zaczęły mi coraz bardziej przeszkadzać jego ograniczenia np.:</p><ul><li>długi czas wczytywania</li><li>kosztowne wtyczki</li><li>braki w stylizowaniu</li><li>problemy z debugowaniem</li></ul><p>Najbardziej jednak przeszkadzał mi fakt, że nie jestem w stanie zrobić dokładnie tego, co chcę, tylko muszę działać w ramach funkcjonalności danej wtyczki.</p><p>Zacząłem rozwijać się w REACT, TypeScript oraz Next.js. Chciałem mieć pełnię możliwości w tworzeniu moich aplikacji oraz pracować z wykorzystaniem zdecydowanie lepszych technologii. Stworzyłem już 9 stron internetowych z czego 3 za pomocą Next.js w tym jeden sklep internetowy, <fizjo>fizjotrenerka.eu</fizjo>.</p><p>Posiadam dużą swobodę w korzystaniu z tych rozwiązań i cały czas poszerzam swoją wiedzę, by być na bieżąco z rozwijającą się technologią. Obecnie uczę się Angular, żeby nie zamykać się tylko w obrębie jednego framework'a oraz node.js, aby w przyszłości być w stanie obsłużyć również backend.</p><p>Do swojej pracy wykorzystuję sztuczną inteligencję. Uważam, że to narzędzie jest absolutnie niezbędne w celu przyspieszenia swojej efektywności.</p>",
-      "Button": "Kontakt"
+      "content": "<h3>Projektowanie Stron Internetowych</h3><p>Twoja strona to nie tylko wizytówka — to centrum Twojej marki w sieci. To właśnie tam klienci wyrabiają sobie pierwsze wrażenie o Tobie i Twojej firmie. Dlatego projektuję strony, które nie tylko wyglądają dobrze, ale też działają <strong>intuicyjnie, szybko i bez zbędnych rozpraszaczy.</strong></p><p>Każdy projekt zaczynam od zrozumienia Twojego biznesu i tego, co chcesz przekazać. Nie korzystam z gotowych szablonów — tworzę od podstaw, tak aby każda strona była dopasowana do Twojego stylu i potrzeb. Dzięki temu masz pewność, że <strong>nikt inny nie będzie wyglądał tak samo.</strong></p><p>Skupiam się na prostocie i wygodzie użytkownika. Każdy przycisk, kolor czy animacja mają swoje zadanie — prowadzić odwiedzającego dokładnie tam, gdzie chcesz. Czy to ma być klasyczna strona wizytówka, czy rozbudowany landing page — <strong>zawsze dbam o to, by wszystko było przejrzyste, estetyczne i dobrze działało na każdym urządzeniu.</strong></p><p>Znalazłem też sposób, żeby Twoja strona działała <strong>bez żadnych miesięcznych opłat.</strong> Korzystam z rozwiązań, które pozwalają utrzymywać strony całkowicie za darmo, bez kompromisów w jakości czy szybkości działania. Jedynym kosztem, jaki poniesiesz, będzie opłata za domenę — około 200 zł rocznie. Dzięki temu możesz mieć profesjonalną stronę internetową bez abonamentów i niepotrzebnych kosztów utrzymania.</p><p>Nie musisz martwić się o projekt graficzny — <strong>przygotuję go za darmo</strong>. To mój sposób, by pokazać Ci, że Jestem pewny swoich umiejętności, i że warto ze mną współpracować. Dopiero po akceptacji projektu zajmę się wdrożeniem strony.</p><p>Obecnie mam specjalną <strong>ofertę promocyjną</strong> - pełna, nowoczesna strona internetowa <strong>już od 1500 zł</strong>. To świetna opcja dla osób, które chcą wreszcie pokazać swoją firmę w internecie bez przepłacania. <strong>Oferta jest ograniczona czasowo</strong>, więc jeśli od dawna myślisz o własnej stronie - to naprawdę dobry moment, żeby zrealizować swoje plany.</p><h3>Dlaczego właśnie ja, a nie duża agencja?</h3><p>Bo u mnie nie płacisz za pośredników, biuro w centrum miasta ani wielostopniowe „procesy”. Pracuję sam, więc <strong>płacisz tylko za efekt</strong> — konkretną stronę, która spełnia Twoje oczekiwania. Dzięki temu mogę oferować uczciwą cenę, szybki kontakt i pełne zaangażowanie w Twój projekt.</p><p>Każdą stronę traktuję jak swoją — bo wiem, że dla Ciebie to coś więcej niż tylko kilka zakładek w internecie. To Twoja wizytówka, Twoja marka, Twój wizerunek. A ja pomagam Ci sprawić, by wyglądał dokładnie tak, jak chcesz.</p><p>Skontaktuj się ze mną i przekonaj się, jak łatwo możesz mieć stronę, która pracuje dla Ciebie!</p>",
+      "Buttonprice": "Cennik",
+      "Buttoncontact": "Poproś o Wycenę"
     },
-
     "Latestwebdesigns": {
       "Title": "Ostatnie Projekty"
     },
+    "Automations": {
+      "content": "<h3>Automatyzacje AI</h3><p>Czas to dziś najcenniejszy zasób, a ja pomagam go odzyskać. Automatyzacje z wykorzystaniem sztucznej inteligencji pozwalają firmom działać <strong>szybciej, sprawniej i z mniejszym wysiłkiem</strong>. Dzięki nim możesz skupić się na tym, co naprawdę ważne — rozwijaniu swojego biznesu — <strong>zamiast tracić godziny na powtarzalne zadania.</strong></p><p>Każdą automatyzację projektuję indywidualnie, dopasowując ją do potrzeb konkretnej firmy. Czasem wystarczy proste połączenie dwóch aplikacji, innym razem — cały system, który oszczędza kilka godzin dziennie. Wszystko zależy od tego, jak działasz i co można usprawnić.</p><p>Moim celem nie jest tworzenie „magii” — tylko realne rozwiązania, które <strong>zmniejszają koszty, eliminują błędy i oszczędzają czas</strong>. A jeśli nie znasz tej technologii — spokojnie. Wszystko wytłumaczę prostym językiem i pokażę Ci, jak korzystać z automatyzacji bez potrzeby programowania czegokolwiek.</p><p>Ceny automatyzacji zaczynają się już <strong>od 300 zł</strong>, ale wszystko zależy od złożoności projektu. Czasem mała automatyzacja potrafi przynieść ogromny efekt — na przykład usprawnić obsługę klientów, przyspieszyć sprzedaż albo zautomatyzować raporty finansowe.</p><p><strong>Automatyzacja to nie przyszłość — to teraźniejszość.</strong> Jeśli chcesz, by Twoja firma działała mądrzej, szybciej i bez zbędnego stresu — zrób pierwszy krok i zobacz, co AI może zrobić dla Ciebie.</p>",
+      "highlightedtext": "<h3>Czym są Automatyzacje?</h3><p>Wyobraź sobie, że Twój biznes działa jak dobrze naoliwiona maszyna. Kiedy klient złoży zamówienie — dane automatycznie trafiają do arkusza, wystawia się faktura, a on od razu dostaje spersonalizowanego maila z podziękowaniem. Albo że każda wiadomość z formularza kontaktowego trafia prosto do Twojego telefonu na WhatsAppie z gotową odpowiedzią, przygotowaną przez AI. Możesz też mieć system, który sam przypomina klientom o niezapłaconych fakturach, planuje posty w mediach społecznościowych, generuje oferty, a nawet analizuje opinie, co znacząco ułatwia wprowadzanie istotnych zmian.</p><p>To właśnie robią automatyzacje AI — zdejmują z Ciebie obowiązki, które zabierają czas i energię, a nie przynoszą realnego zysku. Ty zajmujesz się klientami, kreatywnością i rozwojem firmy, a resztę załatwia technologia.</p>",
+      "Buttonprice": "Cennik",
+      "Buttoncontact": "Poproś o Wycenę"
+    },
     "GraphDesign": {
-      "content": "<h3>Projektowanie Graficzne</h3><p>Grafiką pasjonuję się odkąd tylko pamiętam. W trakcie studiów zacząłem zajmować się grafiką komputerową. Realizowałem małe projekty tj. wizytówki czy ulotki dla osób z mojego otoczenia.</p><p>W trakcie prowadzenia sklepu internetowego oraz jego mediów społecznościowych zdobyłem najwięcej wiedzy związanej z tworzeniem grafik sprzedażowych. Zrozumiałem wtedy wagę implementacji rzeczy takich jak identyfikacja graficzna oraz konieczność stosowania odpowiednio oznaczonych CTA. </p><p>Do swojej pracy używam następujących programów:</p><ul><li>Procreate</li><li>Figma</li><li>Canva</li></ul><p>Moja uwaga obecnie zwrócona jest w stronę projektowania stron internetowych. Pod tym kątem obecnie poszerzam swoją wiedzę . Użytkownicy internetu bardzo szybko tracą zainteresowanie oraz ciężko jest pozyskać ich uwagę. Dlatego bardzo istotny jest odpowiedni rozkład graficzny w aplikacji internetowej tak, aby treści wzbudzały ciekawość bez niepotrzebnego przebodźcowania.</p>",
-      "Button": "Kontakt"
+      "content": "<h3>Grafika komputerowa</h3><p><strong>Dobry projekt to coś więcej niż ładny obrazek. To sposób, w jaki Twoja marka mówi do ludzi.</strong> Zajmuję się tworzeniem grafik, które nie tylko przyciągają uwagę, ale też mają sens — takich, które pasują do stylu Twojej firmy i sprawiają, że klienci zapamiętują Cię od razu.</p><p>Tworzę m.in. <strong>wizytówki, zaproszenia, plakaty, vouchery, ulotki, banery i materiały do social mediów</strong>. Nie działam według jednego schematu — każdy projekt traktuję indywidualnie, bo każda firma ma swój charakter i historię.</p><p>Zanim cokolwiek narysuję, chcę poznać Ciebie i Twój biznes. Nie chodzi tylko o kolory i fonty, ale o to, <strong>jak chcesz być postrzegany</strong>. Czasem prosta, minimalistyczna wizytówka mówi o profesjonalizmie więcej niż tysiąc słów, a innym razem — odważna, kolorowa grafika idealnie oddaje energię Twojej marki.</p><p>Nie musisz mieć gotowej wizji — od tego właśnie jestem. Pomogę Ci dobrać styl, przygotuję kilka propozycji i dopracuję projekt tak długo, aż uznasz, że to \"to\". Dopiero wtedy kończymy. <strong>Jeśli nie trafię w Twój gust — nie płacisz.</strong></p><p><strong>Ceny zaczynają się od 400 zł</strong> za projekt graficzny, ale dokładna wycena zawsze zależy od rodzaju zlecenia i poziomu złożoności.</p><p>Dla mnie grafika to połączenie techniki i emocji. To sposób, żeby Twoja firma zrobiła dobre pierwsze wrażenie — bo często to właśnie ono decyduje, czy klient zostanie na dłużej.</p><h3>Dlaczego właśnie ja, a nie duża agencja?</h3><p>Bo u mnie jesteś najważniejszy. Nie trafiasz do kolejki z numerkiem, nie rozmawiasz z pięcioma osobami po drodze, których trzeba opłacić. U mnie wygląda to prościej. Pracuję sam, więc <strong>nie płacisz za biuro, sekretarkę ani menedżera od kawy.</strong> Płacisz tylko za efekt — konkretny projekt, który spełnia Twoje oczekiwania.</p><p>Dzięki temu mogę zaoferować uczciwą cenę, szybki kontakt i pełne zaangażowanie. Każdy projekt traktuję jak swój własny, bo wiem, że dla Ciebie to coś ważnego. A gdy nie trzeba karmić korporacyjnej machiny, zostaje więcej miejsca na kreatywność i faktyczne działanie.</p>",
+      "Buttonprice": "Cennik",
+      "Buttoncontact": "Poproś o Wycenę"
     },
     "Latestgraphdesigns": {
       "Title": "Ostatnie Projekty"

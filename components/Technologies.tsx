@@ -11,6 +11,63 @@ import { useTranslations } from "next-intl";
 
 export default function Technologies() {
   const t = useTranslations("Homepage.Technologies");
+  const technologiesData = [
+    {
+      src: "/icons/css.svg",
+      alt: "CSS-icon",
+      subtitle: "CSS",
+    },
+    {
+      src: "/icons/figma.svg",
+      alt: "figma-icon",
+      subtitle: "Figma",
+    },
+    {
+      src: "/icons/n8n.svg",
+      alt: "n8n-icon",
+      subtitle: "n8n",
+    },
+    {
+      src: "/icons/git.svg",
+      alt: "git-icon",
+      subtitle: "GIT",
+    },
+    {
+      src: "/icons/html.svg",
+      alt: "html-icon",
+      subtitle: "HTML",
+    },
+    {
+      src: "/icons/javascript.svg",
+      alt: "javascript-icon",
+      subtitle: "JavaScript",
+    },
+    {
+      src: "/icons/nextjs.svg",
+      alt: "nextjs-icon",
+      subtitle: "Next.js",
+    },
+    {
+      src: "/icons/openAI.svg",
+      alt: "openAI-icon",
+      subtitle: "OpenAI",
+    },
+    {
+      src: "/icons/prisma.svg",
+      alt: "prisma-icon",
+      subtitle: "Prisma",
+    },
+    {
+      src: "/icons/react.svg",
+      alt: "css-icon",
+      subtitle: "React",
+    },
+    {
+      src: "/icons/wordpress.svg",
+      alt: "wordpress-icon",
+      subtitle: "Wordpress",
+    },
+  ];
 
   return (
     <section className={styles.section}>
@@ -31,126 +88,20 @@ export default function Technologies() {
         autoplay={{ delay: 0 }}
         modules={[Autoplay]}
       >
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/css.svg"}
-              alt="CSS-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>CSS</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/figma.svg"}
-              alt="figma-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>Figma</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/git.svg"}
-              alt="git-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>GIT</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/html.svg"}
-              alt="html-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>HTML</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/javascript.svg"}
-              alt="javascript-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>JavaScript</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/nextjs.svg"}
-              alt="nextjs-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>Next.js</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/openAI.svg"}
-              alt="openAI-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>OpenAI</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/prisma.svg"}
-              alt="prisma-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>Prisma</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/react.svg"}
-              alt="css-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>React</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image
-              className={styles.icon}
-              src={"/icons/wordpress.svg"}
-              alt="wordpress-icon"
-              width={100}
-              height={100}
-            />
-            <p className={styles.subtitle}>Wordpress</p>
-          </div>
-        </SwiperSlide>
+        {technologiesData.map((technology) => (
+          <SwiperSlide key={technology.subtitle}>
+            <div>
+              <Image
+                className={styles.icon}
+                src={technology.src}
+                alt={technology.alt}
+                width={100}
+                height={100}
+              />
+              <p className={styles.subtitle}>{technology.subtitle}</p>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

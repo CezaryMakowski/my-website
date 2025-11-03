@@ -7,7 +7,6 @@
   position: relative;
   width: 70%;
   margin: auto;
-  padding: 30px 20px;
 }
 
 .section ol,
@@ -106,6 +105,9 @@
 }
 
 @media (max-width: 900px) {
+  .section {
+    margin-top: 18rem;
+  }
   .button_container {
     flex-direction: column;
     gap: 20px;

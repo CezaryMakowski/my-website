@@ -23,7 +23,7 @@ export default function GraphCard({
       slideToClickedSlide
       cardsEffect={{
         perSlideOffset: 15,
-        slideShadows: true,
+        slideShadows: false,
         rotate: true,
         perSlideRotate: 10,
       }}

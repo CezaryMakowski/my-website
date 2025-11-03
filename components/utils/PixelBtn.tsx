@@ -1,9 +1,9 @@
 import styles from "./PixelBtn.module.css";
 import Image from "next/image";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 
 interface pixelBtnProps extends ComponentPropsWithoutRef<"button"> {
-  children: string;
+  children: ReactNode;
 }
 
 export default function PixelBtn({ children, ...props }: pixelBtnProps) {

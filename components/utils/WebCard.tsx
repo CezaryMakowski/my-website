@@ -12,7 +12,7 @@ export default function WebCard({
 }) {
   return (
     <Link href={"https://" + title} className={styles.anchor} target="_blank">
-      <div className={`${"glow"} ${styles.container}`}>
+      <div className={styles.container}>
         <Image src={src} alt={title} width={1350} height={810} />
         <h3 className={styles.title}>
           <TypeEffect>{title}</TypeEffect>

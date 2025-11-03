@@ -10,24 +10,20 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WebProjectsShowcase from "@/components/WebProjectsShowcase";
 import GraphProjectsShowcase from "@/components/GraphProjectsShowcase";
+import FrontSlider from "@/components/FrontSlider";
+import Automations from "@/components/Automations";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
-        <Image
-          priority
-          className={styles.hero}
-          src={"/forest.png"}
-          alt="hero-image-cezary-makowski-web-developer"
-          width={3584}
-          height={2048}
-        />
+        <FrontSlider />
         <PoiontsOfInterest />
         <AboutMe />
         <WebDesign />
         <WebProjectsShowcase />
+        <Automations />
         <GraphicalDesign />
         <GraphProjectsShowcase />
         <Technologies />

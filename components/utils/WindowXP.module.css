@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: var(--main);
+  border: solid 3px var(--secondary);
+  box-shadow: 0 0 40px rgba(179, 224, 199, 0.8);
+}
+
+.windowsIcons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  background-color: var(--background);
+  padding: 0.75rem;
+  border-bottom: solid 3px var(--secondary);
+}
+
+.windowsIcons img {
+  width: 1.3rem;
+  height: auto;
+}
+
+.content {
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.content > p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
