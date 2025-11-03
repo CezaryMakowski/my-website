@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import styles from "./GraphicalDesign.module.css";
 import PixelBtn from "./utils/PixelLink";
 import MiddleCircuit from "./circuits/MiddleCircuit";
 import { useTranslations } from "next-intl";
 import WindowXP from "./utils/WindowXP";
+import { motion } from "framer-motion";
 
 export default function GraphicalDesign() {
   const t = useTranslations("Homepage.GraphDesign");
@@ -37,20 +39,44 @@ export default function GraphicalDesign() {
           {/* <PixelBtn href="/cennik">{t("Buttonprice")}</PixelBtn> */}
           <PixelBtn href="/#kontakt">{t("Buttoncontact")}</PixelBtn>
         </div>
-        <Image
+        <motion.div
           className={styles.paint_can}
-          src="/paint-can.png"
-          alt="puszka-farby"
-          width={500}
-          height={500}
-        />
-        <Image
+          initial={{ opacity: 0, x: 180, rotate: 90 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            mass: 0.8,
+            stiffness: 100,
+          }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/paint-can.png"
+            alt="puszka-farby"
+            width={500}
+            height={500}
+          />
+        </motion.div>
+        <motion.div
           className={styles.palette}
-          src="/palette.png"
-          alt="paleta-kolorów"
-          width={500}
-          height={500}
-        />
+          initial={{ opacity: 0, x: -180, rotate: 90 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            mass: 0.8,
+            stiffness: 100,
+          }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/palette.png"
+            alt="paleta-kolorów"
+            width={500}
+            height={500}
+          />
+        </motion.div>
       </WindowXP>
     </section>
   );
