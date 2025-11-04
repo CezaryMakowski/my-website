@@ -49,7 +49,7 @@ export default function GraphicalDesign() {
             mass: 0.8,
             stiffness: 100,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-150px 0px -150px 0px" }}
         >
           <Image
             src="/paint-can.png"
@@ -68,7 +68,7 @@ export default function GraphicalDesign() {
             mass: 0.8,
             stiffness: 100,
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-150px 0px -150px 0px" }}
         >
           <Image
             src="/palette.png"
