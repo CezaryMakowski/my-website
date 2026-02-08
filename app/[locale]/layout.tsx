@@ -21,7 +21,54 @@ const vt323 = VT323({
 });
 
 export const metadata: Metadata = {
-  title: "WebDevelopment & Graphical Design",
+  title: {
+    default: "WebDevelopment & Graphical Design | designandweb.dev",
+    template: "%s | designandweb.dev",
+  },
+  description:
+    "Nowoczesny web development i oryginalny design graficzny — portfolio Cezarego Makowskiego. Tworzę strony www, projektuję logotypy, identyfikację wizualną oraz grafikę na potrzeby internetu i druku.",
+  keywords: [
+    "web development",
+    "grafika komputerowa",
+    "projektowanie stron www",
+    "designandweb.dev",
+    "portfolio",
+    "strony internetowe",
+    "projekty graficzne",
+    "logo",
+    "identyfikacja wizualna",
+    "design",
+    "agencja kreatywna",
+    "UI",
+    "UX",
+    "Front-end",
+    "Next.js",
+  ],
+  creator: "Cezary Makowski",
+  openGraph: {
+    title: "WebDevelopment & Graphical Design | designandweb.dev",
+    description:
+      "Portfolio Cezarego Makowskiego - nowoczesny web development i unikalny design graficzny. Sprawdź moje realizacje: strony internetowe, logo, grafika do druku i internetu.",
+    url: "https://designandweb.dev",
+    siteName: "Cezary Makowski",
+    type: "website",
+    images: [
+      {
+        url: "https://designandweb.dev/projekty-graficzne-grafika.png",
+        width: 1200,
+        height: 630,
+        alt: "Cezary Makowski - WebDevelopment & Graphic Design",
+      },
+    ],
+    locale: "pl_PL",
+  },
+  alternates: {
+    canonical: "https://designandweb.dev",
+    languages: {
+      pl: "https://designandweb.dev/pl",
+      en: "https://designandweb.dev/en",
+    },
+  },
 };
 
 export default async function RootLayout({
@@ -31,7 +78,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  if (!routing.locales.includes(locale as "en" | "pl")) {
+  if (!routing.locales.includes((await locale) as "en" | "pl")) {
     notFound();
   }
 

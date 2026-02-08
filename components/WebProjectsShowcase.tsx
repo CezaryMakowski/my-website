@@ -26,6 +26,10 @@ export default function WebProjectsShowcase() {
       src: "/yamako_website.png",
       title: "yamakoterapie.pl",
     },
+    {
+      src: "/Physiocare.png",
+      title: "physiocare.com.pl",
+    },
   ];
   return (
     <section className={styles.section}>
