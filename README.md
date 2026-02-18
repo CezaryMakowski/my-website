@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cezary Makowski — Strona osobista
 
-## Getting Started
+To jest moja osobista strona internetowa, stanowiąca część mojego portfolio. Projekt zbudowany jest w Next.js (App Router) i zawiera wielojęzyczne treści oraz komponenty prezentujące moje projekty z zakresu projektowania graficznego i web designu.
 
-First, run the development server:
+## Najważniejsze informacje
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Cel:** Prezentacja portfolio, usług i kontaktu — prosty i szybki showcase moich projektów.
+- **Status:** Projekt osobisty.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funkcje
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Strona główna z animowanym sliderem i sekcjami usług.
+- Sekcje portfolio dla projektów web i graficznych.
+- Formularz kontaktowy z obsługą API (`/api/send/route.ts`).
+- Wielojęzyczność (pl / en) — pliki wiadomości w `messages/`.
+- Kilka interaktywnych komponentów (Matrix, FrontSlider, WindowXP itp.).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologie
 
-## Learn More
+- Next.js (App Router)
+- React + TypeScript
+- CSS Modules
+- Framer Motion
 
-To learn more about Next.js, take a look at the following resources:
+## Struktura projektu (wybrane pliki)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` — strony aplikacji i layout
+- `components/` — komponenty UI (Header, Footer, portfolio cards)
+- `api/send/route.ts` — endpoint do wysyłki formularza kontaktowego
+- `messages/` — tłumaczenia (`pl.json`, `en.json`)
+- `public/` — zasoby statyczne (obrazy, ikony)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Konfiguracja i tłumaczenia
 
-## Deploy on Vercel
+- Tłumaczenia znajdują się w `messages/` w formacie JSON.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Kontakt
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Jeśli chcesz nawiązać współpracę lub masz pytania, skontaktuj się ze mną:
+
+- Imię i nazwisko: Cezary Makowski
+- E-mail: cezary.makowski96@gmail.com
